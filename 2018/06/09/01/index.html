@@ -112,12 +112,12 @@
 <meta property="og:site_name" content="坐和放宽">
 <meta property="og:description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个layo">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2018/06/09/01/$res/01-1.png">
-<meta property="og:updated_time" content="2018-06-09T06:07:44.787Z">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/01-1.png">
+<meta property="og:updated_time" content="2018-06-09T06:24:02.813Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="viewport学习笔记">
 <meta name="twitter:description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个layo">
-<meta name="twitter:image" content="http://yoursite.com/2018/06/09/01/$res/01-1.png">
+<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/01-1.png">
 
 
 
@@ -341,7 +341,7 @@
                 
               
 
-              <time title="创建时间：2018-06-09 14:03:41 / 修改时间：14:07:44" itemprop="dateCreated datePublished" datetime="2018-06-09T14:03:41+08:00">2018-06-09</time>
+              <time title="创建时间：2018-06-09 14:03:41 / 修改时间：14:24:02" itemprop="dateCreated datePublished" datetime="2018-06-09T14:03:41+08:00">2018-06-09</time>
             
 
             
@@ -404,7 +404,7 @@
 <p>meta viewport 有5个常用属性<br>| 属性 | 备注 |<br>|—|—|<br>| width | 设置layout viewport的宽度，<code>width=device-width</code>表示使layout viewport宽度等于设备宽度 |<br>| initial-scale | 初始缩放比例 |<br>| minimum-scale | 允许用户的最小缩放值 |<br>| maximum-scale | 允许用户的最大缩放值 |<br>| user-scalable | 是否允许用户进行缩放，no 代表不允许，yes代表允许 |<br>以及height属性，与width对应，不常用</p>
 <hr>
 <p>例子：<br>页面A添加了viewport<br>页面B没有添加viewport</p>
-<p><img src="$res/01-1.png" alt="01-1"></p>
+<p><img src="https://all4one4all.github.io/img-blog/01-1.png" alt=""></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面A<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span></span><br><span class="line">box</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面B<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span></span><br><span class="line">box</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <hr>
