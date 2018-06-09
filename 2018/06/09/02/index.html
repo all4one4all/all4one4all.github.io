@@ -104,25 +104,29 @@
 
 
 
-  <meta name="description" content="1效果一：360°旋转 修改rotate(旋转度数)  12345678910111213* &amp;#123;	transition:All 0.4s ease-in-out;	-webkit-transition:All 0.4s ease-in-out;	-moz-transition:All 0.4s ease-in-out;	-o-transition:All 0.4s ease-in-out">
-<meta name="keywords" content="css,test">
+  <meta name="description" content="1.css盒模型（box model）所有HTML元素可以看作盒子，每一个盒子包括：外边距，边框，内边距，和实际内容  外边距(margin)：边框外的区域边框(border)：边框内边距(padding)：边框到内容之间的填充部分内容(content)：盒子的实际内容 2.外边距重叠（Collapsing margins）外边距重叠：两个或多个盒子(可能相邻也可能嵌套)的相邻边界(其间没有任何非">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css动画">
-<meta property="og:url" content="http://yoursite.com/2018/05/26/other/index.html">
+<meta property="og:title" content="盒模型学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/06/09/02/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="1效果一：360°旋转 修改rotate(旋转度数)  12345678910111213* &amp;#123;	transition:All 0.4s ease-in-out;	-webkit-transition:All 0.4s ease-in-out;	-moz-transition:All 0.4s ease-in-out;	-o-transition:All 0.4s ease-in-out">
+<meta property="og:description" content="1.css盒模型（box model）所有HTML元素可以看作盒子，每一个盒子包括：外边距，边框，内边距，和实际内容  外边距(margin)：边框外的区域边框(border)：边框内边距(padding)：边框到内容之间的填充部分内容(content)：盒子的实际内容 2.外边距重叠（Collapsing margins）外边距重叠：两个或多个盒子(可能相邻也可能嵌套)的相邻边界(其间没有任何非">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-26T06:42:57.264Z">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/02/$res/02-1.png">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/02/$res/02-2.png">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/02/$res/02-3.png">
+<meta property="og:updated_time" content="2018-06-09T06:03:33.448Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css动画">
-<meta name="twitter:description" content="1效果一：360°旋转 修改rotate(旋转度数)  12345678910111213* &amp;#123;	transition:All 0.4s ease-in-out;	-webkit-transition:All 0.4s ease-in-out;	-moz-transition:All 0.4s ease-in-out;	-o-transition:All 0.4s ease-in-out">
+<meta name="twitter:title" content="盒模型学习笔记">
+<meta name="twitter:description" content="1.css盒模型（box model）所有HTML元素可以看作盒子，每一个盒子包括：外边距，边框，内边距，和实际内容  外边距(margin)：边框外的区域边框(border)：边框内边距(padding)：边框到内容之间的填充部分内容(content)：盒子的实际内容 2.外边距重叠（Collapsing margins）外边距重叠：两个或多个盒子(可能相邻也可能嵌套)的相邻边界(其间没有任何非">
+<meta name="twitter:image" content="http://yoursite.com/2018/06/09/02/$res/02-1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/26/other/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/09/02/"/>
 
 
 
@@ -132,7 +136,7 @@
   };
 </script>
 
-  <title>css动画 | 坐和放宽</title>
+  <title>盒模型学习笔记 | 坐和放宽</title>
   
 
 
@@ -297,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/other/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/09/02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="坐和放宽">
@@ -314,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css动画
+          <h1 class="post-title" itemprop="name headline">盒模型学习笔记
               
             
           </h1>
@@ -339,13 +343,9 @@
                 
               
 
-              <time title="创建时间：2018-05-26 14:00:21 / 修改时间：14:42:57" itemprop="dateCreated datePublished" datetime="2018-05-26T14:00:21+08:00">2018-05-26</time>
+              <time title="创建时间：2018-06-09 14:03:33" itemprop="dateCreated datePublished" datetime="2018-06-09T14:03:33+08:00">2018-06-09</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -395,15 +395,23 @@
       
 
       
-        <h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p><em>效果一：360°旋转 修改rotate(旋转度数) </em></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">	<span class="attribute">transition</span>:All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">	<span class="attribute">-webkit-transition</span>:All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">	<span class="attribute">-moz-transition</span>:All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">	<span class="attribute">-o-transition</span>:All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line">*<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">	<span class="attribute">transform</span>:<span class="built_in">rotate</span>(360deg);</span><br><span class="line">	<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(360deg);</span><br><span class="line">	<span class="attribute">-moz-transform</span>:<span class="built_in">rotate</span>(360deg);</span><br><span class="line">	<span class="attribute">-o-transform</span>:<span class="built_in">rotate</span>(360deg);</span><br><span class="line">	<span class="attribute">-ms-transform</span>:<span class="built_in">rotate</span>(360deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><em>效果二：放大 修改scale(放大的值)</em></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-webkit-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-moz-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-o-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">scale</span>(1.2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><em>效果三：旋转放大 修改rotate(旋转度数) scale(放大值)</em></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-webkit-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-moz-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-o-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.2);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">rotate</span>(360deg) <span class="built_in">scale</span>(1.2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><em>效果四：上下左右移动 修改translate(x轴,y轴)</em></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-webkit-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-moz-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">    <span class="attribute">-o-transition</span>: All <span class="number">0.4s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*<span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(0, -10px);</span><br><span class="line">    <span class="attribute">-webkit-transform</span>: <span class="built_in">translate</span>(0, -10px);</span><br><span class="line">    <span class="attribute">-moz-transform</span>: <span class="built_in">translate</span>(0, -10px);</span><br><span class="line">    <span class="attribute">-o-transform</span>: <span class="built_in">translate</span>(0, -10px);</span><br><span class="line">    <span class="attribute">-ms-transform</span>: <span class="built_in">translate</span>(0, -10px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="2"><a href="#2" class="headerlink" title="2"></a>2</h1><p>关于chrome设置 font-weight：700/800/900 ；无效的问题<br>加上font-family 字体即可</p>
+        <h1 id="1-css盒模型（box-model）"><a href="#1-css盒模型（box-model）" class="headerlink" title="1.css盒模型（box model）"></a>1.css盒模型（box model）</h1><p>所有HTML元素可以看作盒子，每一个盒子包括：外边距，边框，内边距，和实际内容</p>
+<p><img src="$res/02-1.png" alt="02-1"></p>
+<p><strong>外边距(margin)</strong>：边框外的区域<br><strong>边框(border)</strong>：边框<br><strong>内边距(padding)</strong>：边框到内容之间的填充部分<br><strong>内容(content)</strong>：盒子的实际内容</p>
+<h1 id="2-外边距重叠（Collapsing-margins）"><a href="#2-外边距重叠（Collapsing-margins）" class="headerlink" title="2.外边距重叠（Collapsing margins）"></a>2.外边距重叠（Collapsing margins）</h1><p>外边距重叠：两个或多个盒子(可能相邻也可能嵌套)的相邻边界(其间没有任何非空内容、补白、边框)重合在一起而形成一个单一边界。</p>
+<hr>
+<p>例子：<br>box1的margin-bottom为10px<br>box2的margin-top为10px<br>重叠之后margin为10px</p>
+<p><img src="$res/02-2.png" alt="02-2"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin-bottom:10px;width:100%;height:100px;background:#b72afc;"</span>&gt;</span></span><br><span class="line">    box1</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin-top:10px;width:100%;height:100px;background:#23d2fc;"</span>&gt;</span></span><br><span class="line">    box2</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>特殊情况：<br>1.水平边距不会重叠<br>2.position:absolute、float、display:inline-block及块级格式化上下文不会重叠<br>3.根元素的垂直margin不会被重叠</p>
+<p>折叠后外边距的计算<br>1.折叠的margin都是正值，取最大值<br>2.都是负值，取绝对值大的，从零开始，负向位移<br>2.不全是正值，则都取绝对值，然后用正值减去最大值</p>
+<h1 id="3-外边距重叠的解决方法"><a href="#3-外边距重叠的解决方法" class="headerlink" title="3.外边距重叠的解决方法"></a>3.外边距重叠的解决方法</h1><p>使用BFC（Block Formatting Context）块级格式化上下文 来避免外边距重叠<br>满足任意一个条件的元素会触发BFC<br>1.根元素<br>2.绝对定位（position:avsolute、position:fixed）<br>3.浮动（float不为none）<br>4.display为inline-block(行内块)、table-cell(表格单元格)、table-caption(表格标题)、flex和inine-flex(弹性盒子)<br>5.overflow的值不为visible</p>
+<hr>
+<p>例子：<br>利用BFC解决外边距重叠的问题</p>
+<p><img src="$res/02-3.png" alt="02-3"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"overflow:hidden;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin-bottom:10px;width:100%;height:100px;background:#b72afc;"</span>&gt;</span></span><br><span class="line">        box1</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin-top:10px;width:100%;height:100px;background:#23d2fc;"</span>&gt;</span></span><br><span class="line">    box2</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
 
       
     </div>
@@ -426,8 +434,6 @@
           
             <a href="/tags/css/" rel="tag"># css</a>
           
-            <a href="/tags/test/" rel="tag"># test</a>
-          
         </div>
       
 
@@ -439,14 +445,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/26/other/" rel="next" title="css动画">
+                <i class="fa fa-chevron-left"></i> css动画
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/09/02/" rel="prev" title="盒模型学习笔记">
-                盒模型学习笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/06/09/01/" rel="prev" title="viewport学习笔记">
+                viewport学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -589,7 +599,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2"><span class="nav-number">2.</span> <span class="nav-text">2</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-css盒模型（box-model）"><span class="nav-number">1.</span> <span class="nav-text">1.css盒模型（box model）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-外边距重叠（Collapsing-margins）"><span class="nav-number">2.</span> <span class="nav-text">2.外边距重叠（Collapsing margins）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-外边距重叠的解决方法"><span class="nav-number">3.</span> <span class="nav-text">3.外边距重叠的解决方法</span></a></li></ol></div>
             
 
           </div>

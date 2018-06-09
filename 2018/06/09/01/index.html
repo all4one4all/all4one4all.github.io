@@ -104,20 +104,27 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="坐和放宽">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 1.什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个la">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="viewport学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/06/09/01/index.html">
 <meta property="og:site_name" content="坐和放宽">
+<meta property="og:description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 1.什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个la">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/06/09/01/$res/01-1.png">
+<meta property="og:updated_time" content="2018-06-09T06:03:41.392Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="坐和放宽">
+<meta name="twitter:title" content="viewport学习笔记">
+<meta name="twitter:description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 1.什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个la">
+<meta name="twitter:image" content="http://yoursite.com/2018/06/09/01/$res/01-1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/09/01/"/>
 
 
 
@@ -127,7 +134,7 @@
   };
 </script>
 
-  <title>坐和放宽</title>
+  <title>viewport学习笔记 | 坐和放宽</title>
   
 
 
@@ -174,8 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,7 +222,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
   </li>
@@ -276,9 +282,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -310,11 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/09/01/" itemprop="url">
-                  viewport学习笔记
-                </a>
+          <h1 class="post-title" itemprop="name headline">viewport学习笔记
               
             
           </h1>
@@ -391,19 +393,18 @@
       
 
       
-        
-          
-          关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果
-1.什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/09/01/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果</p>
+<h1 id="1-什么是viewport"><a href="#1-什么是viewport" class="headerlink" title="1.什么是viewport"></a>1.什么是viewport</h1><p>viewport中文翻译为“视区”，先搞清楚两个概念方便我们理解<br><strong>layout viewport</strong>：网页布局的整个区域<br><strong>visual viewport</strong>：显示在屏幕上的区域<br>layout viewport即<html>元素的容器，一般情况下layout viewport的宽高即<html>元素的宽高，当浏览器加载页面时会加载整个layout viewport，如果浏览器的窗口没办法显示整个layout viewport，就会出现滚动条，而用户移动缩放查看的页面部分就是visual viewport</html></html></p>
+<h1 id="2-用meta来控制viewport"><a href="#2-用meta来控制viewport" class="headerlink" title="2.用meta来控制viewport"></a>2.用meta来控制viewport</h1><p>在head中加入<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>实现自适应</p>
+<p>meta viewport 有5个常用属性<br>| 属性 | 备注 |<br>|—|—|<br>| width | 设置layout viewport的宽度，<code>width=device-width</code>表示使layout viewport宽度等于设备宽度 |<br>| initial-scale | 初始缩放比例 |<br>| minimum-scale | 允许用户的最小缩放值 |<br>| maximum-scale | 允许用户的最大缩放值 |<br>| user-scalable | 是否允许用户进行缩放，no 代表不允许，yes代表允许 |<br>以及height属性，与width对应，不常用</p>
+<hr>
+<p>例子：<br>页面A添加了viewport<br>页面B没有添加viewport</p>
+<p><img src="$res/01-1.png" alt="01-1"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面A<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span></span><br><span class="line">box</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面B<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span></span><br><span class="line">box</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+
       
     </div>
 
@@ -421,342 +422,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/09/02/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="坐和放宽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="坐和放宽">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/09/02/" itemprop="url">
-                  盒模型学习笔记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-06-09 14:03:33" itemprop="dateCreated datePublished" datetime="2018-06-09T14:03:33+08:00">2018-06-09</time>
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/css/" rel="tag"># css</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          1.css盒模型（box model）所有HTML元素可以看作盒子，每一个盒子包括：外边距，边框，内边距，和实际内容
-
-外边距(margin)：边框外的区域边框(border)：边框内边距(padding)：边框到内容之间的填充部分内容(content)：盒子的实际内容
-2.外边距重叠（Collap
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/09/02/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/09/02/" rel="next" title="盒模型学习笔记">
+                <i class="fa fa-chevron-left"></i> 盒模型学习笔记
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/other/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="坐和放宽">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="坐和放宽">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/26/other/" itemprop="url">
-                  css动画
-                </a>
-              
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-05-26 14:00:21 / 修改时间：14:42:57" itemprop="dateCreated datePublished" datetime="2018-05-26T14:00:21+08:00">2018-05-26</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          1效果一：360°旋转 修改rotate(旋转度数) 
-12345678910111213* &#123;	transition:All 0.4s ease-in-out;	-webkit-transition:All 0.4s ease-in-out;	-moz-transition:All 0.
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/26/other/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -766,14 +461,19 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -794,8 +494,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -868,6 +577,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-什么是viewport"><span class="nav-number">1.</span> <span class="nav-text">1.什么是viewport</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-用meta来控制viewport"><span class="nav-number">2.</span> <span class="nav-text">2.用meta来控制viewport</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1009,6 +734,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
 
   
 
