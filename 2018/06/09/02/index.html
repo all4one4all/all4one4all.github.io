@@ -116,7 +116,7 @@
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/02-2.png">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/02-3.png">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/02-4.png">
-<meta property="og:updated_time" content="2018-06-09T12:19:18.276Z">
+<meta property="og:updated_time" content="2018-06-09T12:25:19.863Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="盒模型学习笔记">
 <meta name="twitter:description" content="css盒模型（box model）所有HTML元素可以看作盒子，每一个盒子包括：外边距，边框，内边距，和实际内容  外边距(margin)：边框外的区域边框(border)：边框内边距(padding)：边框到内容之间的填充部分内容(content)：盒子的实际内容 外边距重叠（Collapsing margins）外边距重叠：两个或多个盒子(可能相邻也可能嵌套)的相邻边界(其间没有任何非空内容、">
@@ -344,7 +344,7 @@
                 
               
 
-              <time title="创建时间：2018-06-09 14:03:33 / 修改时间：20:19:18" itemprop="dateCreated datePublished" datetime="2018-06-09T14:03:33+08:00">2018-06-09</time>
+              <time title="创建时间：2018-06-09 00:00:00 / 修改时间：20:25:19" itemprop="dateCreated datePublished" datetime="2018-06-09T00:00:00+08:00">2018-06-09</time>
             
 
             
@@ -418,21 +418,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"overflow:hidden;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin-bottom:10px;width:100%;height:100px;background:#b72afc;"</span>&gt;</span></span><br><span class="line">        box1</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"margin-top:10px;width:100%;height:100px;background:#23d2fc;"</span>&gt;</span></span><br><span class="line">    box2</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <hr>
 <h1 id="防止边框和边距把元素撑开"><a href="#防止边框和边距把元素撑开" class="headerlink" title="防止边框和边距把元素撑开"></a>防止边框和边距把元素撑开</h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: content-box | border-box;</span><br><span class="line">-moz-box-sizing: content-box | border-box;</span><br><span class="line">-webkit-box-sizing: content-box | border-box;</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>content-box</th>
-<th>外边框</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>border-box</td>
-<td>内边框</td>
-</tr>
-</tbody>
-</table>
-<p>当<code>box-sizing</code>为外边框时，padding与border会把元素撑开<br>当<code>box-sizing</code>为内边框时，则可以避免padding与border会把元素撑开</p>
+<p>content-box：外边框<br>border-box：内边框<br>当<code>box-sizing</code>为外边框时，padding与border会把元素撑开<br>当<code>box-sizing</code>为内边框时，则可以避免padding与border会把元素撑开</p>
 <hr>
 <p>例子：</p>
 <p><img src="https://all4one4all.github.io/img-blog/02-4.png" alt=""></p>
@@ -472,15 +458,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/06/08/01/" rel="next" title="viewport学习笔记">
+                <i class="fa fa-chevron-left"></i> viewport学习笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/09/01/" rel="prev" title="viewport学习笔记">
-                viewport学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
