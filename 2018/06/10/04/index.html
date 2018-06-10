@@ -104,27 +104,25 @@
 
 
 
-  <meta name="description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个layo">
+  <meta name="description" content="em相对长度单位 相当于当前对象内文本字体的尺寸 如当前对象内文本字体尺寸未被设置 则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）  12.box1&amp;#123;font-size:16px; border:1em solid black;&amp;#125; /*1rem=16px*/.box2&amp;#123;font-zize:20px; boder:1em solid black;&amp;#125;">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="viewport学习笔记">
-<meta property="og:url" content="http://yoursite.com/2018/06/08/01/index.html">
+<meta property="og:title" content="em、rem及%、vm、vh学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/06/10/04/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个layo">
+<meta property="og:description" content="em相对长度单位 相当于当前对象内文本字体的尺寸 如当前对象内文本字体尺寸未被设置 则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）  12.box1&amp;#123;font-size:16px; border:1em solid black;&amp;#125; /*1rem=16px*/.box2&amp;#123;font-zize:20px; boder:1em solid black;&amp;#125;">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/01-1.png">
-<meta property="og:updated_time" content="2018-06-09T12:25:26.883Z">
+<meta property="og:updated_time" content="2018-06-10T03:22:20.580Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="viewport学习笔记">
-<meta name="twitter:description" content="关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果 什么是viewportviewport中文翻译为“视区”，先搞清楚两个概念方便我们理解layout viewport：网页布局的整个区域visual viewport：显示在屏幕上的区域layout viewport即元素的容器，一般情况下layout viewport的宽高即元素的宽高，当浏览器加载页面时会加载整个layo">
-<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/01-1.png">
+<meta name="twitter:title" content="em、rem及%、vm、vh学习笔记">
+<meta name="twitter:description" content="em相对长度单位 相当于当前对象内文本字体的尺寸 如当前对象内文本字体尺寸未被设置 则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）  12.box1&amp;#123;font-size:16px; border:1em solid black;&amp;#125; /*1rem=16px*/.box2&amp;#123;font-zize:20px; boder:1em solid black;&amp;#125;">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/08/01/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/10/04/"/>
 
 
 
@@ -134,7 +132,7 @@
   };
 </script>
 
-  <title>viewport学习笔记 | 坐和放宽</title>
+  <title>em、rem及%、vm、vh学习笔记 | 坐和放宽</title>
   
 
 
@@ -299,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/08/01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/10/04/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="坐和放宽">
@@ -316,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">viewport学习笔记
+          <h1 class="post-title" itemprop="name headline">em、rem及%、vm、vh学习笔记
               
             
           </h1>
@@ -341,24 +339,12 @@
                 
               
 
-              <time title="创建时间：2018-06-08 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-08T00:00:00+08:00">2018-06-08</time>
+              <time title="创建时间：2018-06-10 00:00:00 / 修改时间：11:22:20" itemprop="dateCreated datePublished" datetime="2018-06-10T00:00:00+08:00">2018-06-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-06-09 20:25:26" itemprop="dateModified" datetime="2018-06-09T20:25:26+08:00">2018-06-09</time>
               
             
           </span>
@@ -409,46 +395,32 @@
       
 
       
-        <p>关于如何使用meta来控制viewport使页面实现自适应屏幕大小的效果</p>
-<h1 id="什么是viewport"><a href="#什么是viewport" class="headerlink" title="什么是viewport"></a>什么是viewport</h1><p>viewport中文翻译为“视区”，先搞清楚两个概念方便我们理解<br><strong>layout viewport</strong>：网页布局的整个区域<br><strong>visual viewport</strong>：显示在屏幕上的区域<br>layout viewport即<html>元素的容器，一般情况下layout viewport的宽高即<html>元素的宽高，当浏览器加载页面时会加载整个layout viewport，如果浏览器的窗口没办法显示整个layout viewport，就会出现滚动条，而用户移动缩放查看的页面部分就是visual viewport</html></html></p>
-<h1 id="用meta来控制viewport"><a href="#用meta来控制viewport" class="headerlink" title="用meta来控制viewport"></a>用meta来控制viewport</h1><p>在head中加入meta来控制viewport实现自适应<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>meta viewport 有5个常用属性</p>
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>width</td>
-<td>设置layout viewport的宽度，<code>width=device-width</code>表示使layout viewport宽度等于设备宽度</td>
-</tr>
-<tr>
-<td>initial-scale</td>
-<td>初始缩放比例</td>
-</tr>
-<tr>
-<td>minimum-scale</td>
-<td>允许用户的最小缩放值</td>
-</tr>
-<tr>
-<td>maximum-scale</td>
-<td>允许用户的最大缩放值</td>
-</tr>
-<tr>
-<td>user-scalable</td>
-<td>是否允许用户进行缩放，no 代表不允许，yes代表允许</td>
-</tr>
-</tbody>
-</table>
-<p>以及height属性，与width对应，不常用</p>
+        <h1 id="em"><a href="#em" class="headerlink" title="em"></a>em</h1><p>相对长度单位 相当于当前对象内文本字体的尺寸 如当前对象内文本字体尺寸未被设置 则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）</p>
 <hr>
-<p>例子：<br>页面A添加了viewport<br>页面B没有添加viewport</p>
-<p><img src="https://all4one4all.github.io/img-blog/01-1.png" alt=""></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面A<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span></span><br><span class="line">box</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面B<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span></span><br><span class="line">box</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>; <span class="attribute">border</span>:<span class="number">1em</span> solid black;&#125; <span class="comment">/*1rem=16px*/</span></span><br><span class="line"><span class="selector-class">.box2</span>&#123;<span class="attribute">font-zize</span>:<span class="number">20px</span>; <span class="attribute">boder</span>:<span class="number">1em</span> solid black;&#125; <span class="comment">/*1rem=20px*/</span></span><br></pre></td></tr></table></figure>
+<p>在box1中<code>font-size</code>为16px，则 1em=16px，box1的边框宽度为16px<br>在box2中<code>font-size</code>为20px，则 1em=20px，box2的边框宽度为20px</p>
+<hr>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>;&#125;</span><br><span class="line"><span class="selector-class">.box1</span> <span class="selector-class">.box2</span>&#123;<span class="attribute">font-size</span>:<span class="number">1em</span>;&#125; <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure>
+<p>box2为box1的子元素，并且box2文本字体尺寸未设置，则继承父元素字体尺寸，1em=16px。</p>
+<hr>
+<h1 id="rem"><a href="#rem" class="headerlink" title="rem"></a>rem</h1><p>（root em）相对于html根元素内文本字体尺寸</p>
+<hr>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>;&#125;</span><br><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">2rem</span>;&#125; <span class="comment">/*1rem=16px*/</span></span><br><span class="line"><span class="selector-class">.box1</span> <span class="selector-class">.box2</span>&#123;<span class="attribute">font-size</span>:<span class="number">1rem</span>;&#125; <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure>
+<p>因为html的<code>font-size</code>为16px 所以在任何位置 1rem=16px</p>
+<hr>
+<h1 id="关于chrome设置font-size-62-5"><a href="#关于chrome设置font-size-62-5" class="headerlink" title="关于chrome设置font-size:62.5%"></a>关于chrome设置font-size:62.5%</h1><p>页面的默认字体大小为16px<br>一般为方便计算设置<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:<span class="number">62.5%</span>;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>页面根元素的<code>font-size</code>为 16px*62.5%=10px 则 1rem=10px</p>
+<p>但是在chrome中 浏览器的极限最小字体为12px<br>即使设置根元素<code>font-size</code>为62.5% 即10px  chrome依旧会把字体视为12px<br>所以在chrome中设置<code>font-size:62.5%</code>会实际出现 1rem=12px的情况</p>
+<p>因此为方便计算一般设置为<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:<span class="number">625%</span>;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样根元素<code>font-size</code>为 100px 则1rem=100px</p>
+<h1 id="、vm、vh"><a href="#、vm、vh" class="headerlink" title="%、vm、vh"></a>%、vm、vh</h1><h2 id=""><a href="#" class="headerlink" title="%"></a>%</h2><p>对于普通定位元素就是相对于父元素<br>对于position: absolute;的元素是相对于已定位的父元素<br>对于position: fixed;的元素是相对于viewport</p>
+<h2 id="vm"><a href="#vm" class="headerlink" title="vm"></a>vm</h2><p>viewpoint width的缩写，视窗宽度，1vw等于视窗宽度的1%。</p>
+<hr>
+<p>例子：浏览器宽度1200px, 1 vw = 1200px*1% = 12 px。</p>
+<hr>
+<h2 id="vh"><a href="#vh" class="headerlink" title="vh"></a>vh</h2><p>viewpoint height的缩写，视窗高度，1vh等于视窗高度的1%。</p>
+<hr>
+<p>例子：浏览器高度900px, 1 vh = 900px*1% = 9 px。</p>
 <hr>
 
       
@@ -483,15 +455,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/06/10/05/" rel="next" title="position与float学习笔记">
+                <i class="fa fa-chevron-left"></i> position与float学习笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/09/02/" rel="prev" title="盒模型学习笔记">
-                盒模型学习笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -635,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是viewport"><span class="nav-number">1.</span> <span class="nav-text">什么是viewport</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用meta来控制viewport"><span class="nav-number">2.</span> <span class="nav-text">用meta来控制viewport</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#em"><span class="nav-number">1.</span> <span class="nav-text">em</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rem"><span class="nav-number">2.</span> <span class="nav-text">rem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于chrome设置font-size-62-5"><span class="nav-number">3.</span> <span class="nav-text">关于chrome设置font-size:62.5%</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#、vm、vh"><span class="nav-number">4.</span> <span class="nav-text">%、vm、vh</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">4.1.</span> <span class="nav-text">%</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vm"><span class="nav-number">4.2.</span> <span class="nav-text">vm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vh"><span class="nav-number">4.3.</span> <span class="nav-text">vh</span></a></li></ol></li></ol></div>
             
 
           </div>
