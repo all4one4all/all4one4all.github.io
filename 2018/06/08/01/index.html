@@ -104,19 +104,19 @@
 
 
 
-  <meta name="description" content="关于理解像素及使用meta来控制viewport使页面实现自适应屏幕 像素 设备像素 (device pixels，DP)：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。 设备独立像素 (device independent pixels，DIP)：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为66">
+  <meta name="description" content="关于理解像素及使用meta来控制viewport使页面实现自适应屏幕 像素 设备像素（device pixels，DP）：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。 设备独立像素（device independent pixels，DIP）：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为667x">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="viewport与像素学习笔记">
 <meta property="og:url" content="http://yoursite.com/2018/06/08/01/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="关于理解像素及使用meta来控制viewport使页面实现自适应屏幕 像素 设备像素 (device pixels，DP)：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。 设备独立像素 (device independent pixels，DIP)：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为66">
+<meta property="og:description" content="关于理解像素及使用meta来控制viewport使页面实现自适应屏幕 像素 设备像素（device pixels，DP）：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。 设备独立像素（device independent pixels，DIP）：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为667x">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/01-1.png">
-<meta property="og:updated_time" content="2018-09-06T07:31:00.232Z">
+<meta property="og:updated_time" content="2018-09-06T09:07:27.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="viewport与像素学习笔记">
-<meta name="twitter:description" content="关于理解像素及使用meta来控制viewport使页面实现自适应屏幕 像素 设备像素 (device pixels，DP)：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。 设备独立像素 (device independent pixels，DIP)：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为66">
+<meta name="twitter:description" content="关于理解像素及使用meta来控制viewport使页面实现自适应屏幕 像素 设备像素（device pixels，DP）：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。 设备独立像素（device independent pixels，DIP）：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为667x">
 <meta name="twitter:image" content="https://all4one4all.github.io/img-blog/01-1.png">
 
 
@@ -358,7 +358,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-06 15:31:00" itemprop="dateModified" datetime="2018-09-06T15:31:00+08:00">2018-09-06</time>
+                <time title="修改时间：2018-09-06 17:07:27" itemprop="dateModified" datetime="2018-09-06T17:07:27+08:00">2018-09-06</time>
               
             
           </span>
@@ -411,10 +411,10 @@
       
         <p>关于理解像素及使用meta来控制viewport使页面实现自适应屏幕</p>
 <h1 id="像素"><a href="#像素" class="headerlink" title="像素"></a>像素</h1><ul>
-<li>设备像素 (device pixels，DP)：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。</li>
-<li>设备独立像素 (device independent pixels，DIP)：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为667x375。</li>
+<li>设备像素（device pixels，DP）：也被称为物理像素，设备屏幕上的一个个点，屏幕分辨率即设备像素。例如，iPhone8的设备像素为1334x750。</li>
+<li>设备独立像素（device independent pixels，DIP）：也被称为逻辑像素，计算机坐标系统中的一个点。例如，iPhone8的设备独立像素为667x375。</li>
 <li>css像素：也被称为虚拟像素，viewport中的一个点，浏览器的抽象单位。</li>
-<li>设备像素比(device pixel ratio，DRP)：设备像素/设备独立像素。即一个逻辑像素对应多少个物理像素。DPR越高渲染越细致。例如，iPhone8的DPR为2，即使用4个物理像素显示一个逻辑像素。</li>
+<li>设备像素比（device pixel ratio，DRP）：设备像素/设备独立像素。即一个逻辑像素对应多少个物理像素。DPR越高渲染越细致。例如，iPhone8的DPR为2，即使用4个物理像素显示一个逻辑像素。</li>
 </ul>
 <p>在桌面浏览器中，电脑屏幕的设备像素等于css像素，DPR为1，即css中的1px等于设备屏幕的1px。但在移动端，css中的1px并不一定等于设备的1px，随着技术的进步，移动设备的屏幕分辨率越来越高，在屏幕尺寸不变的情况下，像素却多了一倍两倍甚至三倍，DPR也越来越高，也就是一个css像素会由更多的设备像素来显示。例如，iPhone3的分辨率为320x480，DPR为1，css中的1px就等于设备屏幕的1px。而从iPhone6到了iPhone8，Retina显示屏的分辨率达到为1334x750，DPR为2，也就是css中的1px等于设备屏幕的4px。</p>
 <h1 id="什么是viewport"><a href="#什么是viewport" class="headerlink" title="什么是viewport"></a>什么是viewport</h1><p>viewport中文翻译为“视区”。ppk大佬将其细分为三个概念，layout viewport、visual viewport与idea viewport</p>
@@ -431,10 +431,10 @@
 <li>initial-scale：初始缩放比例 </li>
 <li>minimum-scale：允许用户的最小缩放值 </li>
 <li>maximum-scale：允许用户的最大缩放值 </li>
-<li>user-scalable：是否允许用户进行缩放，no 代表不允许，yes代表允许(iOS10为提高Safari网页的易用性，即使设置了<code>user-scalable=no</code>，用户也可以手动缩放) </li>
+<li>user-scalable：是否允许用户进行缩放，no 代表不允许，yes代表允许（iOS10为提高Safari网页的易用性，即使设置了<code>user-scalable=no</code>，用户也可以手动缩放）</li>
 <li>以及height属性，与width对应，不常用</li>
 </ul>
-<p>在移动端，meta中如果不设定width属性或者不添加meta标签，layout viewport的宽度将默认由设备决定(一般为980px)，如果设置<code>width=device-width</code>，layout viewport宽度等于visual viewport，同时layout viewport即成为ideal viewport。</p>
+<p>在移动端，meta中如果不设定width属性或者不添加meta标签，layout viewport的宽度将默认由设备决定（一般为980px），如果设置<code>width=device-width</code>，layout viewport宽度等于visual viewport，同时layout viewport即成为ideal viewport。</p>
 <p>举例：<img src="https://all4one4all.github.io/img-blog/01-1.png" alt=""><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width,initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面A<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span>box<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>页面B<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:100px;height:100px;background:#23d2fc; "</span>&gt;</span>box<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
