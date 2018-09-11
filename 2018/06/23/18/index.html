@@ -105,14 +105,14 @@
 
 
   <meta name="description" content="媒体查询媒体查询@media可以针对不同的屏幕尺寸设置不同的样式，从而实现响应式页面12345/*样式表中的媒体查询*/@media mediatype and|not|only (media feature) &amp;#123;css-style;&amp;#125;&amp;lt;!-- link中的媒体查询 --&amp;gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; media=&amp;quot">
-<meta name="keywords" content="css">
+<meta name="keywords" content="html&amp;css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="媒体查询@media学习笔记">
 <meta property="og:url" content="http://yoursite.com/2018/06/23/18/index.html">
 <meta property="og:site_name" content="坐和放宽">
 <meta property="og:description" content="媒体查询媒体查询@media可以针对不同的屏幕尺寸设置不同的样式，从而实现响应式页面12345/*样式表中的媒体查询*/@media mediatype and|not|only (media feature) &amp;#123;css-style;&amp;#125;&amp;lt;!-- link中的媒体查询 --&amp;gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; media=&amp;quot">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-26T12:45:08.898Z">
+<meta property="og:updated_time" content="2018-09-11T14:21:13.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="媒体查询@media学习笔记">
 <meta name="twitter:description" content="媒体查询媒体查询@media可以针对不同的屏幕尺寸设置不同的样式，从而实现响应式页面12345/*样式表中的媒体查询*/@media mediatype and|not|only (media feature) &amp;#123;css-style;&amp;#125;&amp;lt;!-- link中的媒体查询 --&amp;gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; media=&amp;quot">
@@ -356,7 +356,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-26 20:45:08" itemprop="dateModified" datetime="2018-06-26T20:45:08+08:00">2018-06-26</time>
+                <time title="修改时间：2018-09-11 22:21:13" itemprop="dateModified" datetime="2018-09-11T22:21:13+08:00">2018-09-11</time>
               
             
           </span>
@@ -422,7 +422,7 @@
 <p>其他的媒体类型很多并不常用，或已被废弃 </p>
 <h2 id="print打印样式"><a href="#print打印样式" class="headerlink" title="print打印样式"></a>print打印样式</h2><p>用媒体查询来控制print打印样式<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">media</span> print &#123;</span><br><span class="line">    * &#123;</span><br><span class="line">        <span class="attribute">background</span>: transparent;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">        <span class="attribute">box-shadow</span>: none;</span><br><span class="line">        <span class="attribute">text-shadow</span>: none;&#125;</span><br><span class="line">    <span class="selector-tag">nav</span>,</span><br><span class="line">    <span class="selector-tag">aside</span> &#123;</span><br><span class="line">        <span class="attribute">display</span>: none;&#125;</span><br><span class="line">    <span class="selector-tag">body</span>,</span><br><span class="line">    <span class="selector-tag">article</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">        <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">padding</span>: <span class="number">0</span>;&#125;</span><br><span class="line">    <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="attribute">text-decoration</span>: underline;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="媒体特性"><a href="#媒体特性" class="headerlink" title="媒体特性"></a>媒体特性</h1><h2 id="宽度"><a href="#宽度" class="headerlink" title="宽度"></a>宽度</h2><h3 id="min-width"><a href="#min-width" class="headerlink" title="min-width"></a>min-width</h3><p>媒体类型大于指定的宽度时，样式生效<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> (min-width: <span class="number">768px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">750px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> (min-width: <span class="number">992px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">970px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> (min-width: <span class="number">1200px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">1170px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>此为bootstrap中栅格布局，视区（viewport）宽度在大于等于768px小于992px时，<code>.container</code>的宽度为750px；视区（viewport）宽度在大于等于992px小于1200px时，<code>.container</code>的宽度为970px；视区（viewport）宽度在大于等于1200px时，<code>.container</code>的宽度为1170px<br><em>当多个min-width同时使用时，尺寸小的在前</em></p>
+<p>此为bootstrap中栅格布局，视窗（viewport）宽度在大于等于768px小于992px时，<code>.container</code>的宽度为750px；视窗（viewport）宽度在大于等于992px小于1200px时，<code>.container</code>的宽度为970px；视窗（viewport）宽度在大于等于1200px时，<code>.container</code>的宽度为1170px<br><em>当多个min-width同时使用时，尺寸小的在前</em></p>
 <h3 id="max-width"><a href="#max-width" class="headerlink" title="max-width"></a>max-width</h3><p>媒体类型小于指定的宽度时，样式生效<br><em>当多个max-width同时使用时，尺寸大的在前</em></p>
 <h3 id="min-width与max-width结合使用"><a href="#min-width与max-width结合使用" class="headerlink" title="min-width与max-width结合使用"></a>min-width与max-width结合使用</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">@<span class="keyword">media</span> screen and (min-width: <span class="number">1200px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">1170px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> screen and (min-width: <span class="number">992px</span>) and (max-width: <span class="number">1199px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">970px</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line">@<span class="keyword">media</span> screen and (min-width: <span class="number">768px</span>) and (max-width: <span class="number">991px</span>) &#123;</span><br><span class="line">    <span class="selector-class">.container</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">750px</span>;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="高度"><a href="#高度" class="headerlink" title="高度"></a>高度</h2><p>媒体类型小于或大于指定的宽度时，样式生效，用法同宽度</p>
@@ -449,7 +449,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/html-css/" rel="tag"># html&css</a>
           
         </div>
       
@@ -592,7 +592,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
