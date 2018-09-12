@@ -104,29 +104,30 @@
 
 
 
-  <meta name="description" content="因为不同浏览器的内核不尽相同，所以浏览器对页面的渲染也有一定差异，即浏览器对同一段代码有不同的解析，这就导致了浏览器兼容问题的出现，为了使页面在不同浏览器上呈现相同效果，较为简单的方法便是为部分代码添加前缀样式，来兼容不同浏览器。如果使用webstorm编辑器，我们可以在webstorm中配置autoprefixer 来自动补全兼容前缀，在此简单记录配置过程，方便需要时参考。 安装及配置第一步：安">
-<meta name="keywords" content="webstorm">
+  <meta name="description" content="Amir Rao，Supergiant Games 的工作室总监大家好，我是Amir Rao，Supergiant Games 的工作室总监——《堡垒》和《晶体管》背后的团队。在此，我想向大家分享我们的团队是如何开发《晶体管》中的函数系统——一个游戏中涉及较多的功能之一，也是我们在开发过程中一直保密的部分，主要是因为我们不确定这个函数功能最终将演变成什么样子。 《晶体管》是我们的第二款游戏于去年">
+<meta name="keywords" content="game">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webstorm补全兼容前缀">
-<meta property="og:url" content="http://yoursite.com/2018/06/19/15/index.html">
+<meta property="og:title" content="游戏设计深度思考——《晶体管》中的函数系统">
+<meta property="og:url" content="http://yoursite.com/2018/07/01/22/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="因为不同浏览器的内核不尽相同，所以浏览器对页面的渲染也有一定差异，即浏览器对同一段代码有不同的解析，这就导致了浏览器兼容问题的出现，为了使页面在不同浏览器上呈现相同效果，较为简单的方法便是为部分代码添加前缀样式，来兼容不同浏览器。如果使用webstorm编辑器，我们可以在webstorm中配置autoprefixer 来自动补全兼容前缀，在此简单记录配置过程，方便需要时参考。 安装及配置第一步：安">
+<meta property="og:description" content="Amir Rao，Supergiant Games 的工作室总监大家好，我是Amir Rao，Supergiant Games 的工作室总监——《堡垒》和《晶体管》背后的团队。在此，我想向大家分享我们的团队是如何开发《晶体管》中的函数系统——一个游戏中涉及较多的功能之一，也是我们在开发过程中一直保密的部分，主要是因为我们不确定这个函数功能最终将演变成什么样子。 《晶体管》是我们的第二款游戏于去年">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/15-1.png">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/15-2.png">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/15-3.png">
-<meta property="og:updated_time" content="2018-09-11T05:55:07.425Z">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/22-1.jpg">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/22-2.gif">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/22-3.gif">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/22-3.gif">
+<meta property="og:updated_time" content="2018-09-12T04:44:35.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webstorm补全兼容前缀">
-<meta name="twitter:description" content="因为不同浏览器的内核不尽相同，所以浏览器对页面的渲染也有一定差异，即浏览器对同一段代码有不同的解析，这就导致了浏览器兼容问题的出现，为了使页面在不同浏览器上呈现相同效果，较为简单的方法便是为部分代码添加前缀样式，来兼容不同浏览器。如果使用webstorm编辑器，我们可以在webstorm中配置autoprefixer 来自动补全兼容前缀，在此简单记录配置过程，方便需要时参考。 安装及配置第一步：安">
-<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/15-1.png">
+<meta name="twitter:title" content="游戏设计深度思考——《晶体管》中的函数系统">
+<meta name="twitter:description" content="Amir Rao，Supergiant Games 的工作室总监大家好，我是Amir Rao，Supergiant Games 的工作室总监——《堡垒》和《晶体管》背后的团队。在此，我想向大家分享我们的团队是如何开发《晶体管》中的函数系统——一个游戏中涉及较多的功能之一，也是我们在开发过程中一直保密的部分，主要是因为我们不确定这个函数功能最终将演变成什么样子。 《晶体管》是我们的第二款游戏于去年">
+<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/22-1.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/19/15/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/01/22/"/>
 
 
 
@@ -136,7 +137,7 @@
   };
 </script>
 
-  <title>webstorm补全兼容前缀 | 坐和放宽</title>
+  <title>游戏设计深度思考——《晶体管》中的函数系统 | 坐和放宽</title>
   
 
 
@@ -301,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/19/15/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/22/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="坐和放宽">
@@ -318,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">webstorm补全兼容前缀
+          <h1 class="post-title" itemprop="name headline">游戏设计深度思考——《晶体管》中的函数系统
               
             
           </h1>
@@ -343,7 +344,7 @@
                 
               
 
-              <time title="创建时间：2018-06-19 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-19T00:00:00+08:00">2018-06-19</time>
+              <time title="创建时间：2018-07-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-07-01T00:00:00+08:00">2018-07-01</time>
             
 
             
@@ -360,7 +361,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-11 13:55:07" itemprop="dateModified" datetime="2018-09-11T13:55:07+08:00">2018-09-11</time>
+                <time title="修改时间：2018-09-12 12:44:35" itemprop="dateModified" datetime="2018-09-12T12:44:35+08:00">2018-09-12</time>
               
             
           </span>
@@ -377,7 +378,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/闲写/" itemprop="url" rel="index"><span itemprop="name">闲写</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/渣翻/" itemprop="url" rel="index"><span itemprop="name">渣翻</span></a></span>
 
                 
                 
@@ -411,16 +412,23 @@
       
 
       
-        <p>因为不同浏览器的内核不尽相同，所以浏览器对页面的渲染也有一定差异，即浏览器对同一段代码有不同的解析，这就导致了浏览器兼容问题的出现，为了使页面在不同浏览器上呈现相同效果，较为简单的方法便是为部分代码添加前缀样式，来兼容不同浏览器。<br>如果使用webstorm编辑器，我们可以在webstorm中配置autoprefixer 来自动补全兼容前缀，在此简单记录配置过程，方便需要时参考。</p>
-<h1 id="安装及配置"><a href="#安装及配置" class="headerlink" title="安装及配置"></a>安装及配置</h1><p><strong>第一步：安装node.js</strong><br>官网下载需要的版本直接安装，并且新版的node.js已经集成了npm，所以不需要再安装npm包<br><strong>第二步：安装autoprefixer</strong><br>在cmd中输入<br><code>npm install autoprefixer -g</code><br>使用npm管理工具来安装autoprefixer<br><strong>第三步：安装postcss-cli</strong><br>在cmd中输入<br><code>npm install postcss-cli -g</code><br><strong>第四步：设置webstorm</strong><br>打开webstorm&gt;文件&gt;设置&gt;工具&gt;外部工具，点击新增按钮<br><img src="https://all4one4all.github.io/img-blog/15-1.png" alt="">配置autoprefixer<br><img src="https://all4one4all.github.io/img-blog/15-2.png" alt="">配置内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name:auotoprefixer </span><br><span class="line">Program:填入 postcss 的PATH</span><br><span class="line">Parameters:-u autoprefixer -o $FileDir$/$FileName$  $FileDir$/$FileName$</span><br><span class="line">Working directory ：`$ProjectFileDir$`</span><br></pre></td></tr></table></figure></p>
-<p>Progrm栏需要填写 postcss 的路径，一般为 用户名\AppDate\Roaming\npm 下的postcss.cmd<br>Parameters栏可根据自己的需要配置<br>Working directory为工作目录，一般为文件目录，可根据自己的需要配置<br><strong>运行</strong><br>在需要补全代码的文件上单击右键&gt;External Tools&gt;autoprefixer，即可为代码进行兼容补全<br><img src="https://all4one4all.github.io/img-blog/15-3.png" alt=""></p>
-<h1 id="关于使用cmd安装解决windows权限问题"><a href="#关于使用cmd安装解决windows权限问题" class="headerlink" title="关于使用cmd安装解决windows权限问题"></a>关于使用cmd安装解决windows权限问题</h1><p>安装环境包，经常出现2503或者2502的错误，都是由于windows的权限问题导致的，如果我们使用cmd来安装，可以轻松避免这样的问题</p>
-<ul>
-<li>以管理员身份运行cmd</li>
-<li>进入安装包所在目录</li>
-<li>输入<code>msiexec /i xxxx.msi</code>回车 进行安装 即可</li>
-</ul>
-<p>cmd的一些简单命令：<br><code>cd xxx</code>进入xxx文件下<br><code>cd \</code>回到根目录<br><code>msiexec</code>查看相关安装选项</p>
+        <p><img src="https://all4one4all.github.io/img-blog/22-1.jpg" alt=""></p>
+<h1 id="Amir-Rao，Supergiant-Games-的工作室总监"><a href="#Amir-Rao，Supergiant-Games-的工作室总监" class="headerlink" title="Amir Rao，Supergiant Games 的工作室总监"></a>Amir Rao，Supergiant Games 的工作室总监</h1><p>大家好，我是Amir Rao，<strong>Supergiant Games</strong> 的工作室总监——<em>《堡垒》</em>和<em>《晶体管》</em>背后的团队。在此，我想向大家分享我们的团队是如何开发<em>《晶体管》</em>中的函数系统——一个游戏中涉及较多的功能之一，也是我们在开发过程中一直保密的部分，主要是因为我们不确定这个函数功能最终将演变成什么样子。</p>
+<p><em>《晶体管》</em>是我们的第二款游戏于去年五月发布。Supergiant于2009年在我父亲的起居室开始。我们最近才庆祝了工作室的五周年纪念日，现在有11人在加利福尼亚州旧金山的办公室工作。</p>
+<p>在加入<strong>Supergiant</strong>之前，我是<strong>EA</strong>的<em>《命令与征服3》</em>和<em>《红色警戒3》</em>的关卡设计师，在那里我遇到了<strong>Supergiant</strong>的联合创始人 Gavin Simon 和我们的创意总监 Greg Kasavin。下面描述的游戏设计进程代表了 Gavin， Greg 与我之间的密切合作，以及整个团队的意见。</p>
+<h1 id="函数系统是什么"><a href="#函数系统是什么" class="headerlink" title="函数系统是什么"></a>函数系统是什么</h1><p><em>《晶体管》</em>是一个动作角色扮演游戏，你可以在其中解锁16种不同的技能（在游戏中称为“函数”），这些能力可以以不同的组合方式创造出数千种独一无二的组合。尝试不同的函数组合以找到最适合你自己的组合是<em>《晶体管》</em>系统设计的核心。并且，这一切都围绕着同一个出发点：我们对集换式卡牌的热爱。<br><img src="https://all4one4all.github.io/img-blog/22-2.gif" alt="">在我们设计一个“鼓励实验”的技能体系之前，我们更加热衷于追求相反的目标：一个防止玩家在早期就对特定技能形成依赖的系统。比起“鼓励实验”，我们计划开发一个在战斗中不能一遍又一遍地使用相同技能的游戏。</p>
+<p>我们最喜欢的并且能达到上述目标的模型来自于<em>《万智牌》</em>——通常你知道牌库中的所有牌，但你不确定将抽到什么牌以及形成什么组合。你心中计划着打出一套完美连招，而乐趣就在于随着时间推移的预期与游戏进程中，以及当运气很差没有完全按希望抽到所需牌时的临场反应 。</p>
+<p>我们很多早期的实验都集中在随机性上。大家设想这样一个游戏，你可以在游戏关卡中获得由多种技能，强化、被动组成的“牌库”。随着时间的推移，你可以为此套牌添加新的强大选项。当你达到一个新的游戏等级时，你可以洗牌并重新组合，以不同的顺序重新选择，创造新的可能性，并为你提供一些关于组合的新想法。这种能力曲线的循环允许不断扩展，是<em>《晶体管》</em>系统设计背后的原始灵感之一。</p>
+<p>从纸牌游戏角度来看这套系统对我们非常有用，因此我们痴迷于追求一种结合了随机性和积累性的模型。然而，我们所尝试的每个版本的关键设计问题都在于洗牌。在<em>《万智牌》</em>中，可以通过开始一场新游戏来重新洗牌组牌。但是，在相对线性的叙事体验中，找到一个使技能一遍又一遍重构显得十分自然的理由很是困难。</p>
+<p>同样难以调整的是每当玩家重构游戏技能时的游戏难度，而玩家抽牌、变强、然后又失去一切的高度局限性能力曲线即随着游戏进度不断提高的风险和我们在设计游戏时的想法十分抵触。</p>
+<p>也许会有另一个游戏架构可以更好地保留我们的原始概念——只是我们不想为了满足特定系统的需求而去改变原本对于<em>《晶体管》</em>的想法。如果各位对于我们的坚持感到好奇，请参阅这篇<a href="http://www.gdcvault.com/play/1015751/The-Failure" target="_blank" rel="noopener">我们花了一年时间将园艺融入《堡垒》</a>。</p>
+<h1 id="为什么移除随机性"><a href="#为什么移除随机性" class="headerlink" title="为什么移除随机性"></a>为什么移除随机性</h1><p>两件关键的事情彻底改变了我们的系统设计。第一个是我们找到一个相对自然的洗牌机制。在<em>《晶体管》</em>中，每当角色的生命值耗尽时，都会失去一个高强度的函数，至少在函数再次可用之前，你不得不在没有它的情况下继续进行游戏。如果你在技能栏中失去了所有函数（最多四时），则必须在上一个检查点重新加载游戏进度。</p>
+<p>这种“缓慢死亡”可能看起来像是一个迂回的滑坡，或者对某些玩家来说确实是这样，但我们发现它使得许多玩家尝试着新的函数组合，因为他们所依靠的组合短时间内可能无法使用。更好的是，他们通常会持续这些新的组合，即使他们重新获得了之前偏好的函数。</p>
+<p>该系统还为玩家提供了三次机会来完成一场战斗，而不需要从头开始。我们很喜欢这样的设计，通过在剩余战斗时间内减少玩家的选择权，而使玩家更注重游戏的玩法。<br><img src="https://all4one4all.github.io/img-blog/22-3.gif" alt="">游戏演变的第二个关键变化是将技能，强化和被动改进整合到一个概念中，这使得我们将函数降低到了16个。现在，如果将一个函数安插到另一个函数上，则第一个函数可以强化第二个函数。或者，可以将你的函数安插到宝贵的“被动”插槽中以增强角色的基础属性。这意味着我们可以创造出16个ARPG中常见的强化概念（如“眩晕”、“魅惑”或“长距离”），让玩家以更强和更具创造性的方式将函数结合起来（“比如我可以创造一个强大的长距离攻击技能，并在爆炸范围内眩晕和魅惑敌人！“）。</p>
+<h1 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h1><p>在此之前，我曾表示我们不希望玩家在整场游戏中始终使用同样的技能，而拒绝更深层次和更多样化的游戏体验。这种情绪来自于我认为许多开发人员都比较倾向的墨守成规的游戏设计理念。当你在玩家的游玩过程中看到了相对来说很省力的游戏玩法，而你想要阻止这样的行为，于是就会试着用各种阻挠的方式来设计游戏。</p>
+<p>但现在不同了，我们更能接受许多玩家倾向于一成不变的想法。在此基础上，我们让系统更加丰富，从而使那些倾向于实验的玩家可以花更多的时间弄清楚怎样组合更加强大……并且它可能也会转换一些不那么具有实验倾向的玩家。</p>
+<p>为了进一步加强这一点，我们在系统中增加了一些内容，每当在组合中使用新的函数时，都会展现有关<em>《晶体管》</em>世界观和角色的背景故事。它有助于回馈那些注重系统和剧情的玩家，而且不会对那些不具有实验倾向的玩家造成不好的游戏体验。<br><img src="https://all4one4all.github.io/img-blog/22-3.gif" alt="">你会注意到，虽然<em>《晶体管》</em>的函数系统会让有创意玩家想出很多组合，但它完全没有传统意义上的大多数RPG所拥有的“投资”概念，这意味着你不能把你最喜欢的函数升到2级、3级或者99级。在<em>《堡垒》</em>中，你可以将所有的投资到消耗在最喜欢的武器上，表达你对这把武器的喜爱以及使它更加强大。</p>
+<p>在<em>《晶体管》</em>中，如果你喜欢某种函数，你可以将它与其他喜欢的函数结合起来，但是你不能升级这个函数。我们最终建立了一个能考虑到这两者和甚至三者以及它们之间的关联的系统，这与我们在<em>《晶体管》</em>中尝试做的其他事情很好地协调在了一起。</p>
 
       
     </div>
@@ -441,7 +449,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/webstorm/" rel="tag"># webstorm</a>
+            <a href="/tags/game/" rel="tag"># game</a>
           
         </div>
       
@@ -454,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/18/14/" rel="next" title="box-shadow的学习笔记">
-                <i class="fa fa-chevron-left"></i> box-shadow的学习笔记
+              <a href="/2018/06/26/21/" rel="next" title="文字排版">
+                <i class="fa fa-chevron-left"></i> 文字排版
               </a>
             
           </div>
@@ -463,10 +471,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/21/16/" rel="prev" title="SCSS基本用法">
-                SCSS基本用法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -624,7 +628,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装及配置"><span class="nav-number">1.</span> <span class="nav-text">安装及配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于使用cmd安装解决windows权限问题"><span class="nav-number">2.</span> <span class="nav-text">关于使用cmd安装解决windows权限问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Amir-Rao，Supergiant-Games-的工作室总监"><span class="nav-number">1.</span> <span class="nav-text">Amir Rao，Supergiant Games 的工作室总监</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数系统是什么"><span class="nav-number">2.</span> <span class="nav-text">函数系统是什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么移除随机性"><span class="nav-number">3.</span> <span class="nav-text">为什么移除随机性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结果"><span class="nav-number">4.</span> <span class="nav-text">结果</span></a></li></ol></div>
             
 
           </div>
