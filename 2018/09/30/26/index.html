@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.3.0">
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="定义var 声明一个变量，可选地将其初始化为一个值。var定义let 声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。let定义const常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。const定义 var与letlet声明的不提升（hoisting）使用var声明变量，变量会发生提升。打印i，会显示i已被声明但无赋值。而使用le">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js中的var、let与const">
+<meta property="og:url" content="http://yoursite.com/2018/09/30/26/index.html">
+<meta property="og:site_name" content="坐和放宽">
+<meta property="og:description" content="定义var 声明一个变量，可选地将其初始化为一个值。var定义let 声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。let定义const常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。const定义 var与letlet声明的不提升（hoisting）使用var声明变量，变量会发生提升。打印i，会显示i已被声明但无赋值。而使用le">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-01T08:05:18.092Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="js中的var、let与const">
+<meta name="twitter:description" content="定义var 声明一个变量，可选地将其初始化为一个值。var定义let 声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。let定义const常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。const定义 var与letlet声明的不提升（hoisting）使用var声明变量，变量会发生提升。打印i，会显示i已被声明但无赋值。而使用le">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/09/30/26/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>js中的var、let与const | 坐和放宽</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">坐和放宽</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">zz`s blog</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/30/26/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="坐和放宽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="坐和放宽">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">js中的var、let与const
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-30 00:00:00" itemprop="dateCreated datePublished" datetime="2018-09-30T00:00:00+08:00">2018-09-30</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-10-01 16:05:18" itemprop="dateModified" datetime="2018-10-01T16:05:18+08:00">2018-10-01</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/瞎记/" itemprop="url" rel="index"><span itemprop="name">瞎记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p><code>var</code> 声明一个变量，可选地将其初始化为一个值。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var" target="_blank" rel="noopener">var定义</a><br><code>let</code> 声明一个块级作用域的本地变量，并且可选的将其初始化为一个值。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let" target="_blank" rel="noopener">let定义</a><br><code>const</code>常量是块级作用域，很像使用 let 语句定义的变量。常量的值不能通过重新赋值来改变，并且不能重新声明。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const" target="_blank" rel="noopener">const定义</a></p>
+<h1 id="var与let"><a href="#var与let" class="headerlink" title="var与let"></a>var与let</h1><h2 id="let声明的不提升（hoisting）"><a href="#let声明的不提升（hoisting）" class="headerlink" title="let声明的不提升（hoisting）"></a>let声明的不提升（hoisting）</h2><p>使用<code>var</code>声明变量，变量会发生提升。打印<code>i</code>，会显示<code>i</code>已被声明但无赋值。<br>而使用<code>let</code>声明变量，变量不会发生提升。打印<code>j</code>，会显示<code>j</code>没有被声明。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(i); <span class="comment">//undefined</span></span><br><span class="line"><span class="keyword">var</span> i</span><br><span class="line"><span class="built_in">console</span>.log(j); <span class="comment">//Uncaught ReferenceError: j is not defined</span></span><br><span class="line"><span class="keyword">let</span> j</span><br></pre></td></tr></table></figure></p>
+<h2 id="同一作用域let不能重复定义同一变量"><a href="#同一作用域let不能重复定义同一变量" class="headerlink" title="同一作用域let不能重复定义同一变量"></a>同一作用域let不能重复定义同一变量</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> i = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log(i); <span class="comment">//2</span></span><br><span class="line"><span class="keyword">let</span> j = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> j = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log(j); <span class="comment">//Uncaught SyntaxError: Identifier 'j' has already been declared</span></span><br></pre></td></tr></table></figure>
+<h2 id="let在作用域后消失"><a href="#let在作用域后消失" class="headerlink" title="let在作用域后消失"></a>let在作用域后消失</h2><p>使用<code>let</code>声明的变量只在作用域内有效，作用域之后变量即消失<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> i = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> j = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(i); <span class="comment">//1</span></span><br><span class="line">    <span class="built_in">console</span>.log(j); <span class="comment">//0</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(i); <span class="comment">//1</span></span><br><span class="line"><span class="built_in">console</span>.log(j); <span class="comment">//Uncaught ReferenceError: j is not defined</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="let的暂时性死区"><a href="#let的暂时性死区" class="headerlink" title="let的暂时性死区"></a>let的暂时性死区</h2><p>如果区块中存在let和const命令，则这个区块对这些命令声明的变量从一开始就形成了封闭做作用域，只要在声明之前做任何使用，都会报错。这在语法上称为“暂时性死区”（temporal dead zone ，简称TDZ）。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i); <span class="comment">//Uncaught ReferenceError: i is not defined</span></span><br><span class="line">    <span class="keyword">let</span> i = <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="let声明的全局变量不属于顶层对象的属性"><a href="#let声明的全局变量不属于顶层对象的属性" class="headerlink" title="let声明的全局变量不属于顶层对象的属性"></a>let声明的全局变量不属于顶层对象的属性</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.i); <span class="comment">//1</span></span><br><span class="line"><span class="keyword">let</span> j = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.j); <span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+<h1 id="const"><a href="#const" class="headerlink" title="const"></a>const</h1><h2 id="const定义的常量，必须赋值"><a href="#const定义的常量，必须赋值" class="headerlink" title="const定义的常量，必须赋值"></a>const定义的常量，必须赋值</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> i; <span class="comment">//Uncaught SyntaxError: Missing initializer in const declaration</span></span><br></pre></td></tr></table></figure>
+<h2 id="其他属性同let"><a href="#其他属性同let" class="headerlink" title="其他属性同let"></a>其他属性同let</h2><ul>
+<li>同一作用域const不能重复定义同一变量</li>
+<li>const在作用域后消失</li>
+<li>const的暂时性死区</li>
+<li>const声明的全局变量不属于顶层对象的属性</li>
+</ul>
+<h1 id="let在for循环中的使用"><a href="#let在for循环中的使用" class="headerlink" title="let在for循环中的使用"></a>let在for循环中的使用</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    a[i] = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line">a[<span class="number">0</span>](); <span class="comment">// 5</span></span><br><span class="line">a[<span class="number">1</span>](); <span class="comment">// 5</span></span><br><span class="line">a[<span class="number">2</span>](); <span class="comment">// 5</span></span><br><span class="line">a[<span class="number">3</span>](); <span class="comment">// 5</span></span><br><span class="line">a[<span class="number">4</span>](); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>变量<code>i</code>是<code>var</code>命令声明的，在全局范围内都有效，所以全局只有一个变量<code>i</code>。每一次循环，变量<code>i</code>的值都会发生改变，而循环内被赋给数组<code>a</code>的函数内部的<code>console.log(i)</code>，里面的<code>i</code>指向的就是全局的<code>i</code>。也就是说，所有数组<code>a</code>的成员里面的<code>i</code>，指向的都是同一个<code>i</code>，导致运行时输出的是最后一轮的<code>i</code>的值，也就是5。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    a[i] = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line">a[<span class="number">0</span>](); <span class="comment">// 1</span></span><br><span class="line">a[<span class="number">1</span>](); <span class="comment">// 2</span></span><br><span class="line">a[<span class="number">2</span>](); <span class="comment">// 3</span></span><br><span class="line">a[<span class="number">3</span>](); <span class="comment">// 4</span></span><br><span class="line">a[<span class="number">4</span>](); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>变量<code>i</code>是<code>let</code>声明的，当前的<code>i</code>只在本轮循环有效，所以每一次循环的<code>i</code>其实都是一个新的变量，所以最后输出的是<code>6</code>。你可能会问，如果每一轮循环的变量<code>i</code>都是重新声明的，那它怎么知道上一轮循环的值，从而计算出本轮循环的值？这是因为 JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量<code>i</code>时，就在上一轮循环的基础上进行计算。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 5 5 5 5 5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1 2 3 4 5</span></span><br></pre></td></tr></table></figure>
+<p>setTimeout执行中，匿名函数<code>function(){console.log(i);}</code>会查找当前运行环境中变量的值。<code>var</code>声明的变量<code>i</code>为全局变量在运行环境中的值为5，所以会输出5 5 5 5 5。但是<code>let</code>声明的变量<code>i</code>只在当前运行环境有效，其值是每一个循环创建匿名函数时候的<code>i</code>。 所以会输出1 2 3 4 5。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/30/27/" rel="next" title="我在阅读MDN时发现的input元素属性">
+                <i class="fa fa-chevron-left"></i> 我在阅读MDN时发现的input元素属性
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">坐和放宽</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#var与let"><span class="nav-number">2.</span> <span class="nav-text">var与let</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#let声明的不提升（hoisting）"><span class="nav-number">2.1.</span> <span class="nav-text">let声明的不提升（hoisting）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同一作用域let不能重复定义同一变量"><span class="nav-number">2.2.</span> <span class="nav-text">同一作用域let不能重复定义同一变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#let在作用域后消失"><span class="nav-number">2.3.</span> <span class="nav-text">let在作用域后消失</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#let的暂时性死区"><span class="nav-number">2.4.</span> <span class="nav-text">let的暂时性死区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#let声明的全局变量不属于顶层对象的属性"><span class="nav-number">2.5.</span> <span class="nav-text">let声明的全局变量不属于顶层对象的属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#const"><span class="nav-number">3.</span> <span class="nav-text">const</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#const定义的常量，必须赋值"><span class="nav-number">3.1.</span> <span class="nav-text">const定义的常量，必须赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他属性同let"><span class="nav-number">3.2.</span> <span class="nav-text">其他属性同let</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#let在for循环中的使用"><span class="nav-number">4.</span> <span class="nav-text">let在for循环中的使用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">坐和放宽</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
