@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="坐和放宽">
 <meta property="og:description" content="随机数Math.random()即Math对象的random()方法，会返回一个0~1的随机数（包括0但不包括1）Math.floor()即Math对象的floor()方法，对一个数进行下舍入如果需要生成一个1~9之间的随机数（包括1包括9）代码如下：12var randomNum;randomNum = Math.floor(Math.random() * 9) + 1; Math.random">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-04T09:22:28.408Z">
+<meta property="og:updated_time" content="2018-10-04T12:50:27.806Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="随机数与洗牌算法">
 <meta name="twitter:description" content="随机数Math.random()即Math对象的random()方法，会返回一个0~1的随机数（包括0但不包括1）Math.floor()即Math对象的floor()方法，对一个数进行下舍入如果需要生成一个1~9之间的随机数（包括1包括9）代码如下：12var randomNum;randomNum = Math.floor(Math.random() * 9) + 1; Math.random">
@@ -339,7 +339,7 @@
                 
               
 
-              <time title="创建时间：2018-10-04 00:00:00 / 修改时间：17:22:28" itemprop="dateCreated datePublished" datetime="2018-10-04T00:00:00+08:00">2018-10-04</time>
+              <time title="创建时间：2018-10-04 00:00:00 / 修改时间：20:50:27" itemprop="dateCreated datePublished" datetime="2018-10-04T00:00:00+08:00">2018-10-04</time>
             
 
             
@@ -396,7 +396,7 @@
 
       
         <h1 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h1><p><code>Math.random()</code>即<code>Math</code>对象的<code>random()</code>方法，会返回一个0~1的随机数（包括0但不包括1）<br><code>Math.floor()</code>即<code>Math</code>对象的<code>floor()</code>方法，对一个数进行下舍入<br>如果需要生成一个1~9之间的随机数（包括1包括9）代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> randomNum;</span><br><span class="line">randomNum = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">9</span>) + <span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
-<p><code>Math.random() * 9</code>返回一个0~9的随机浮点数（包括0但不包括9）<br><code>Math.floor(Math.random() * 9)</code>返回一个0~8的随机整数（包括0包括8）<br><code>Math.floor(Math.random() * 9) + 1;</code>返回一个1~9的随机整数数（包括0包括9）</p>
+<p><code>Math.random() * 9</code>返回一个0~9的随机浮点数（包括0但不包括9）<br><code>Math.floor(Math.random() * 9)</code>返回一个0~8的随机整数（包括0包括8）<br><code>Math.floor(Math.random() * 9) + 1;</code>返回一个1~9的随机整数数（包括1包括9）</p>
 <h1 id="洗牌算法"><a href="#洗牌算法" class="headerlink" title="洗牌算法"></a>洗牌算法</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">randomArray</span>(<span class="params">length</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> arr1 = [],</span><br><span class="line">        arr2 = [],</span><br><span class="line">        i, randomNum;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">        arr1[i] = i + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (i = length; i &gt; <span class="number">0</span>;) &#123;</span><br><span class="line">        randomNum = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * i);</span><br><span class="line">        arr2.push(arr1[randomNum]);</span><br><span class="line">        arr1[randomNum] = arr1[--i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol>
 <li>生成两个空数组arr1与arr2</li>
