@@ -104,21 +104,21 @@
 
 
 
-  <meta name="description" content="position1position: relative | absolute | fixed;  position:static（默认值）：静态定位，无特殊定位，是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。 p">
+  <meta name="description" content="position1position: relative | absolute | fixed; position:static静态定位。是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。 position:relat">
 <meta name="keywords" content="html&amp;css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="position与float学习笔记">
 <meta property="og:url" content="http://yoursite.com/2018/06/10/05/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="position1position: relative | absolute | fixed;  position:static（默认值）：静态定位，无特殊定位，是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。 p">
+<meta property="og:description" content="position1position: relative | absolute | fixed; position:static静态定位。是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。 position:relat">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/05-1.png">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/05-2.png">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/05-3.png">
-<meta property="og:updated_time" content="2018-10-31T10:40:00.069Z">
+<meta property="og:updated_time" content="2018-10-31T11:19:57.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="position与float学习笔记">
-<meta name="twitter:description" content="position1position: relative | absolute | fixed;  position:static（默认值）：静态定位，无特殊定位，是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。 p">
+<meta name="twitter:description" content="position1position: relative | absolute | fixed; position:static静态定位。是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。 position:relat">
 <meta name="twitter:image" content="https://all4one4all.github.io/img-blog/05-1.png">
 
 
@@ -360,7 +360,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-10-31 18:40:00" itemprop="dateModified" datetime="2018-10-31T18:40:00+08:00">2018-10-31</time>
+                <time title="修改时间：2018-10-31 19:19:57" itemprop="dateModified" datetime="2018-10-31T19:19:57+08:00">2018-10-31</time>
               
             
           </span>
@@ -412,12 +412,10 @@
 
       
         <h1 id="position"><a href="#position" class="headerlink" title="position"></a>position</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">position: relative | absolute | fixed;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>position:static（默认值）：静态定位，无特殊定位，是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。</li>
-<li>position:relative（相对定位）：生成相对定位的元素，相对于其正常位置进行定位。元素的位置通过left、right、top、button属性进行规定，可以通过z-index进行层次分级。</li>
-<li>position:absolute（绝对定位）：生成绝对定位元素，使元素<strong>脱离文档流</strong>，并相对于其包含块进行定位，包含块可能是文档中的另一个元素或者是初始包含块， 元素原先在正常文档流中所占的空间会会被后面元素占据。（绝对定位元素的包含块为离它最近的position:absolute、position:relative或者position:fixed元素 。只要父级元素设置了position并且不是static，那么设定了absolute的子元素即以此为包含块。如果未定义包含块，则相对于layout viewport定位。）</li>
-<li>position:fixed（绝对定位）：生成绝对定位元素，使元素<strong>脱离文档流</strong>，并相对于浏览器窗口进行定位。通常配合z-index一起来使用。</li>
-</ul>
+<h2 id="position-static"><a href="#position-static" class="headerlink" title="position:static"></a>position:static</h2><p>静态定位。是html元素默认的定位方式，不设定元素的position属性时默认的position值就是static，遵循正常的文档流对象，对象占用文档空间，该定位方式下，top、right、bottom、left、z-index等属性是无效的。</p>
+<h2 id="position-relative"><a href="#position-relative" class="headerlink" title="position:relative"></a>position:relative</h2><p>相对定位。生成相对定位的元素，相对于其正常位置进行定位。元素的位置通过left、right、top、button属性进行规定，可以通过z-index进行层次分级。</p>
+<h2 id="position-absolute"><a href="#position-absolute" class="headerlink" title="position:absolute"></a>position:absolute</h2><p>绝对定位。生成绝对定位元素，使元素<strong>脱离文档流</strong>，并相对于其包含块进行定位，包含块可能是文档中的另一个元素或者是初始包含块， 元素原先在正常文档流中所占的空间会会被后面元素占据。（绝对定位元素的包含块为离它最近的position:absolute、position:relative或者position:fixed元素 。只要父级元素设置了position并且不是static，那么设定了absolute的子元素即以此为包含块。如果未定义包含块，则相对于layout viewport定位。）</p>
+<h2 id="position-fixed"><a href="#position-fixed" class="headerlink" title="position:fixed"></a>position:fixed</h2><p>固定定位。生成绝对定位元素，使元素<strong>脱离文档流</strong>，并相对于浏览器窗口进行定位。通常配合z-index一起来使用。</p>
 <p>position:fixed在header、footer上的应用：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">header</span>,</span><br><span class="line"><span class="selector-tag">footer</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;&#125;</span><br><span class="line"><span class="selector-tag">header</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">width</span>: x;</span><br><span class="line">	<span class="attribute">height</span>: x;&#125;</span><br><span class="line"><span class="selector-tag">footer</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">width</span>: y;</span><br><span class="line">	<span class="attribute">height</span>: y;&#125;</span><br></pre></td></tr></table></figure></p>
 <p>为了避免出现 header与footer覆盖页面内容的情况 需要对body进行设置<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    padding： x 0 y;&#125;  /*为padding-top与padding-bottom部分设置header与footer占据的高度*/</span><br></pre></td></tr></table></figure></p>
 <h1 id="float"><a href="#float" class="headerlink" title="float"></a>float</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float: none | left | right;</span><br></pre></td></tr></table></figure>
@@ -644,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#position"><span class="nav-number">1.</span> <span class="nav-text">position</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#float"><span class="nav-number">2.</span> <span class="nav-text">float</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#不完全脱离文档流"><span class="nav-number">2.1.</span> <span class="nav-text">不完全脱离文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#父元素高度塌陷"><span class="nav-number">2.2.</span> <span class="nav-text">父元素高度塌陷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清除浮动"><span class="nav-number">2.3.</span> <span class="nav-text">清除浮动</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#position"><span class="nav-number">1.</span> <span class="nav-text">position</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#position-static"><span class="nav-number">1.1.</span> <span class="nav-text">position:static</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#position-relative"><span class="nav-number">1.2.</span> <span class="nav-text">position:relative</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#position-absolute"><span class="nav-number">1.3.</span> <span class="nav-text">position:absolute</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#position-fixed"><span class="nav-number">1.4.</span> <span class="nav-text">position:fixed</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#float"><span class="nav-number">2.</span> <span class="nav-text">float</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#不完全脱离文档流"><span class="nav-number">2.1.</span> <span class="nav-text">不完全脱离文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#父元素高度塌陷"><span class="nav-number">2.2.</span> <span class="nav-text">父元素高度塌陷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清除浮动"><span class="nav-number">2.3.</span> <span class="nav-text">清除浮动</span></a></li></ol></li></ol></div>
             
 
           </div>
