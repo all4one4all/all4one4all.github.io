@@ -104,18 +104,18 @@
 
 
 
-  <meta name="description" content="em相对于当前对象内文本字体的尺寸。如当前对象内文本字体尺寸未被设置，则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）1.box1&amp;#123;font-size:16px; border:1em solid black;&amp;#125;  /*1rem=16px*/ 在box1中font-size为16px，则 1em=16px，box1的边框宽度为16px12.box1&amp;#123;font">
+  <meta name="description" content="绝对长度绝对长度单位即现实世界的度量单位。    单位 说明     in 英寸（1 in = 2.54 cm）   cm 厘米   mm 毫米   pt 磅（1 pt = 1/72 in）   pc 派卡（1 pc = 12 pt）   q 1/4 mm    相对长度相对长度单位即另一种度量值的倍数。    单位 说明     % 百分比单位   px 像素（相对于屏幕分辨率）   em 相对">
 <meta name="keywords" content="html&amp;css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="em、rem及%、vm、vh学习笔记">
+<meta property="og:title" content="CSS长度学习笔记">
 <meta property="og:url" content="http://yoursite.com/2018/06/10/04/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="em相对于当前对象内文本字体的尺寸。如当前对象内文本字体尺寸未被设置，则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）1.box1&amp;#123;font-size:16px; border:1em solid black;&amp;#125;  /*1rem=16px*/ 在box1中font-size为16px，则 1em=16px，box1的边框宽度为16px12.box1&amp;#123;font">
+<meta property="og:description" content="绝对长度绝对长度单位即现实世界的度量单位。    单位 说明     in 英寸（1 in = 2.54 cm）   cm 厘米   mm 毫米   pt 磅（1 pt = 1/72 in）   pc 派卡（1 pc = 12 pt）   q 1/4 mm    相对长度相对长度单位即另一种度量值的倍数。    单位 说明     % 百分比单位   px 像素（相对于屏幕分辨率）   em 相对">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-08T10:39:25.737Z">
+<meta property="og:updated_time" content="2018-12-04T05:25:28.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="em、rem及%、vm、vh学习笔记">
-<meta name="twitter:description" content="em相对于当前对象内文本字体的尺寸。如当前对象内文本字体尺寸未被设置，则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）1.box1&amp;#123;font-size:16px; border:1em solid black;&amp;#125;  /*1rem=16px*/ 在box1中font-size为16px，则 1em=16px，box1的边框宽度为16px12.box1&amp;#123;font">
+<meta name="twitter:title" content="CSS长度学习笔记">
+<meta name="twitter:description" content="绝对长度绝对长度单位即现实世界的度量单位。    单位 说明     in 英寸（1 in = 2.54 cm）   cm 厘米   mm 毫米   pt 磅（1 pt = 1/72 in）   pc 派卡（1 pc = 12 pt）   q 1/4 mm    相对长度相对长度单位即另一种度量值的倍数。    单位 说明     % 百分比单位   px 像素（相对于屏幕分辨率）   em 相对">
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>em、rem及%、vm、vh学习笔记 | 坐和放宽</title>
+  <title>CSS长度学习笔记 | 坐和放宽</title>
   
 
 
@@ -314,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">em、rem及%、vm、vh学习笔记
+          <h1 class="post-title" itemprop="name headline">CSS长度学习笔记
               
             
           </h1>
@@ -356,7 +356,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-08 18:39:25" itemprop="dateModified" datetime="2018-09-08T18:39:25+08:00">2018-09-08</time>
+                <time title="修改时间：2018-12-04 13:25:28" itemprop="dateModified" datetime="2018-12-04T13:25:28+08:00">2018-12-04</time>
               
             
           </span>
@@ -407,13 +407,78 @@
       
 
       
-        <h1 id="em"><a href="#em" class="headerlink" title="em"></a>em</h1><p>相对于当前对象内文本字体的尺寸。如当前对象内文本字体尺寸未被设置，则相对于浏览器的默认字体尺寸（em继承父级元素的字体尺寸）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>; <span class="attribute">border</span>:<span class="number">1em</span> solid black;&#125;  <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure></p>
+        <h1 id="绝对长度"><a href="#绝对长度" class="headerlink" title="绝对长度"></a>绝对长度</h1><p>绝对长度单位即现实世界的度量单位。</p>
+<table>
+<thead>
+<tr>
+<th>单位</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in</td>
+<td>英寸（1 in = 2.54 cm）</td>
+</tr>
+<tr>
+<td>cm</td>
+<td>厘米</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>毫米</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>磅（1 pt = 1/72 in）</td>
+</tr>
+<tr>
+<td>pc</td>
+<td>派卡（1 pc = 12 pt）</td>
+</tr>
+<tr>
+<td>q</td>
+<td>1/4 mm</td>
+</tr>
+</tbody>
+</table>
+<h1 id="相对长度"><a href="#相对长度" class="headerlink" title="相对长度"></a>相对长度</h1><p>相对长度单位即另一种度量值的倍数。</p>
+<table>
+<thead>
+<tr>
+<th>单位</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%</td>
+<td>百分比单位</td>
+</tr>
+<tr>
+<td>px</td>
+<td>像素（相对于屏幕分辨率）</td>
+</tr>
+<tr>
+<td>em</td>
+<td>相对于当前对象内文本字号的长度</td>
+</tr>
+<tr>
+<td>rem</td>
+<td>相对于根元素内文本字号的长度</td>
+</tr>
+</tbody>
+</table>
+<h2 id=""><a href="#" class="headerlink" title="%"></a>%</h2><p>对于普通定位元素就是相对于父元素。<br>对于 <code>position: absolute;</code> 的元素是相对于已定位的父元素。<br>对于 <code>position: fixed;</code> 的元素是相对于viewport。</p>
+<h2 id="em"><a href="#em" class="headerlink" title="em"></a>em</h2><p>相对于当前对象内文本字号的长度。如当前对象内文本字号未被设置，则相对于浏览器的默认字号（em继承父级元素的字体尺寸）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>; <span class="attribute">border</span>:<span class="number">1em</span> solid black;&#125;  <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure></p>
 <p>在box1中font-size为16px，则 1em=16px，box1的边框宽度为16px<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>;&#125;</span><br><span class="line"><span class="selector-class">.box1</span> <span class="selector-class">.box2</span>&#123;<span class="attribute">font-size</span>:<span class="number">1em</span>;&#125;  <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure></p>
 <p>box2为box1的子元素，并且box2文本字体尺寸未设置，则box2继承box1字体尺寸 1em=16px。</p>
-<h1 id="rem（root-em）"><a href="#rem（root-em）" class="headerlink" title="rem（root em）"></a>rem（root em）</h1><p>相对于html根元素内文本字体尺寸。根元素文本字体尺寸由浏览器决定，不同浏览器存在差异。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>;&#125;</span><br><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">2rem</span>;&#125;  <span class="comment">/*1rem=16px*/</span></span><br><span class="line"><span class="selector-class">.box1</span> <span class="selector-class">.box2</span>&#123;<span class="attribute">font-size</span>:<span class="number">1rem</span>;&#125;  <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="rem（root-em）"><a href="#rem（root-em）" class="headerlink" title="rem（root em）"></a>rem（root em）</h2><p>相对于html根元素内文本字号的长度。根元素文本字号由浏览器决定，不同浏览器存在差异。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;<span class="attribute">font-size</span>:<span class="number">16px</span>;&#125;</span><br><span class="line"><span class="selector-class">.box1</span>&#123;<span class="attribute">font-size</span>:<span class="number">2rem</span>;&#125;  <span class="comment">/*1rem=16px*/</span></span><br><span class="line"><span class="selector-class">.box1</span> <span class="selector-class">.box2</span>&#123;<span class="attribute">font-size</span>:<span class="number">1rem</span>;&#125;  <span class="comment">/*1rem=16px*/</span></span><br></pre></td></tr></table></figure></p>
 <p>因为html的font-size为16px 所以无论在box1还是box2中 1rem=16px</p>
-<h2 id="关于chrome设置font-size-62-5-的问题"><a href="#关于chrome设置font-size-62-5-的问题" class="headerlink" title="关于chrome设置font-size:62.5%的问题"></a>关于chrome设置font-size:62.5%的问题</h2><p>一般浏览器的默认文本字体尺寸为16px，所以为了方便计算可以设置<code>html{font-size:62.5%;}</code>，页面根元素的font-size为 16px*62.5%=10px 则 1rem=10px<br>但是在chrome中，浏览器的极限最小字体为12px。设置根元素font-size为62.5% 即10px，chrome依旧会把字体视为12px，所以在chrome中设置<code>font-size:62.5%</code>会实际出现 1rem=12px的情况。因此可以设置<code>html{font-size:625%;}</code>，这样根元素font-size为100px，则1rem=100px</p>
-<h1 id="、vm、vh"><a href="#、vm、vh" class="headerlink" title="%、vm、vh"></a>%、vm、vh</h1><p><strong>%</strong><br>对于普通定位元素就是相对于父元素<br>对于position: absolute;的元素是相对于已定位的父元素<br>对于position: fixed;的元素是相对于viewport<br><strong>vm</strong><br>viewpoint width的缩写，视区宽度，1vw等于视窗宽度的1%。<br>浏览器宽度1200px, 1 vw = 1200px*1% = 12 px。<br><strong>vh</strong><br>viewpoint height的缩写，视区高度，1vh等于视窗高度的1%。<br>浏览器高度900px, 1 vh = 900px*1% = 9 px。</p>
+<h3 id="关于chrome设置font-size-62-5-的问题"><a href="#关于chrome设置font-size-62-5-的问题" class="headerlink" title="关于chrome设置font-size:62.5%的问题"></a>关于chrome设置font-size:62.5%的问题</h3><p>一般浏览器的默认文本字号为16px，所以为了方便计算可以设置<code>html{font-size:62.5%;}</code>，页面根元素的font-size为 16px*62.5%=10px 则 1rem=10px<br>但是在chrome中，浏览器的极限最小字号为12px。设置根元素font-size为62.5% 即10px，chrome依旧会把字号视为12px，所以在chrome中设置<code>font-size:62.5%</code>会实际出现 1rem=12px的情况。因此可以设置<code>html{font-size:625%;}</code>，这样根元素font-size为100px，则1rem=100px</p>
+<h2 id="ex"><a href="#ex" class="headerlink" title="ex"></a>ex</h2><h2 id="其他相对长度"><a href="#其他相对长度" class="headerlink" title="其他相对长度"></a>其他相对长度</h2><p><strong>vw</strong><br>viewpoint width的缩写，相对于视区宽度的长度，1vw等于视窗宽度的1%。<br>浏览器宽度1200px, 1 vw = 1200px*1% = 12 px。<br><strong>vh</strong><br>viewpoint height的缩写，相对于视区高度的长度，1vh等于视窗高度的1%。<br>浏览器高度900px, 1 vh = 900px*1% = 9 px。<br><strong>vmin</strong><br>1vmin等于最短视区轴长（高度与宽度较小）的1%。<br><strong>vmax</strong><br>1vmax等于最长视区轴长（高度与宽度较大）的1%。</p>
+<p>举例：<br>假设一viewport尺寸为1200px * 900px（宽度为1200px，长度为900px）。<br>1 vw = 1200px*1% = 12 px<br>1 vh = 900px*1% = 9 px<br>1 vmin = 900px*1% = 9 px<br>1 vmax = 1200px*1% = 12 px</p>
+<p><strong>ch</strong><br>相对于当前元素内数字 “0” 宽度的长度。即当前字体显示的字符的平均宽度，一般与数字 “0” 宽度相当。<br>如当前对象内文本的字号未被人为设置，则相对于浏览器的默认字号。<br><strong>ex</strong><br>相对于当前元素内字母 “x” 高度的长度。即字体基线到中线之间的距离，一般与字母 “x” 高度相当，通常为字体高度的一半。<br>如当前对象内文本的字号未被人为设置，则相对于浏览器的默认字号。</p>
 
       
     </div>
@@ -625,7 +690,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#em"><span class="nav-number">1.</span> <span class="nav-text">em</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#rem（root-em）"><span class="nav-number">2.</span> <span class="nav-text">rem（root em）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于chrome设置font-size-62-5-的问题"><span class="nav-number">2.1.</span> <span class="nav-text">关于chrome设置font-size:62.5%的问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#、vm、vh"><span class="nav-number">3.</span> <span class="nav-text">%、vm、vh</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#绝对长度"><span class="nav-number">1.</span> <span class="nav-text">绝对长度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相对长度"><span class="nav-number">2.</span> <span class="nav-text">相对长度</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.1.</span> <span class="nav-text">%</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#em"><span class="nav-number">2.2.</span> <span class="nav-text">em</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rem（root-em）"><span class="nav-number">2.3.</span> <span class="nav-text">rem（root em）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于chrome设置font-size-62-5-的问题"><span class="nav-number">2.3.1.</span> <span class="nav-text">关于chrome设置font-size:62.5%的问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ex"><span class="nav-number">2.4.</span> <span class="nav-text">ex</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他相对长度"><span class="nav-number">2.5.</span> <span class="nav-text">其他相对长度</span></a></li></ol></li></ol></div>
             
 
           </div>
