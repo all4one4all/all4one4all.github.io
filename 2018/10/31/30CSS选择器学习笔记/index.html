@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.3.0">
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="基本选择器通用选择器* 匹配文档中的所有元素。（包括 html 与 body 元素）1234567/*normalize.css*/* &amp;#123;      margin: 0;    padding: 0;    -moz-box-sizing: border-box;    -webkit-box-sizing: border-box;    box-sizing: border-box;&amp;">
+<meta name="keywords" content="html&amp;css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS选择器学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/10/31/30CSS选择器学习笔记/index.html">
+<meta property="og:site_name" content="坐和放宽">
+<meta property="og:description" content="基本选择器通用选择器* 匹配文档中的所有元素。（包括 html 与 body 元素）1234567/*normalize.css*/* &amp;#123;      margin: 0;    padding: 0;    -moz-box-sizing: border-box;    -webkit-box-sizing: border-box;    box-sizing: border-box;&amp;">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/30-1.png">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/30-4.png">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/30-2.png">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/30-3.png">
+<meta property="og:updated_time" content="2018-12-06T06:41:11.416Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS选择器学习笔记">
+<meta name="twitter:description" content="基本选择器通用选择器* 匹配文档中的所有元素。（包括 html 与 body 元素）1234567/*normalize.css*/* &amp;#123;      margin: 0;    padding: 0;    -moz-box-sizing: border-box;    -webkit-box-sizing: border-box;    box-sizing: border-box;&amp;">
+<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/30-1.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/10/31/30CSS选择器学习笔记/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>CSS选择器学习笔记 | 坐和放宽</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">坐和放宽</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">zz`s blog</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/30CSS选择器学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="坐和放宽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="坐和放宽">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS选择器学习笔记
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-31 00:00:00" itemprop="dateCreated datePublished" datetime="2018-10-31T00:00:00+08:00">2018-10-31</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-06 14:41:11" itemprop="dateModified" datetime="2018-12-06T14:41:11+08:00">2018-12-06</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/瞎记/" itemprop="url" rel="index"><span itemprop="name">瞎记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h1><h2 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h2><p><code>*</code> 匹配文档中的所有元素。（包括 html 与 body 元素）<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*normalize.css*/</span></span><br><span class="line">* &#123;  </span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">-moz-box-sizing</span>: border-box;</span><br><span class="line">    <span class="attribute">-webkit-box-sizing</span>: border-box;</span><br><span class="line">    <span class="attribute">box-sizing</span>: border-box;&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="类型选择器"><a href="#类型选择器" class="headerlink" title="类型选择器"></a>类型选择器</h2><p>匹配某一类元素。<br><code>a {...}</code> 会匹配所有 a 元素。</p>
+<h2 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h2><p>匹配指定的class属性的元素。<br><code>.box {...}</code> 会匹配所有 class 名为box的元素。<br><code>*.box {...}</code> 会匹配所有 class 名为box的元素。<br><code>a#link {...}</code> 会匹配 id 名为link的 a 元素。</p>
+<h2 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h2><p>匹配指定的id属性的元素。<br><code>#box {...}</code> 会匹配 id 名为box的元素。</p>
+<h1 id="复合选择器"><a href="#复合选择器" class="headerlink" title="复合选择器"></a>复合选择器</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>复合选择器<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>...<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h2</span>&gt;</span>...<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"title"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"part1"</span>&gt;</span>...<span class="tag">&lt;<span class="name">span</span>&gt;</span>...<span class="tag">&lt;/<span class="name">span</span>&gt;</span>...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h2><p><code>选择器a, 选择器b, 选择器c</code> 匹配指定选择器的多个元素<br><code>h1, h2, #part1 {...}</code> 会匹配h1，h2以及 id 是part1的三个元素。</p>
+<h2 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h2><p><code>选择器a 选择器b</code> 匹配选择器a的元素的子元素（不一定为直接子元素），且这个子元素匹配选择器b。<br><code>.title span {...}</code> 会匹配元素 class 是title的元素的 span 后代元素。</p>
+<h2 id="子元素选择器。"><a href="#子元素选择器。" class="headerlink" title="子元素选择器。"></a>子元素选择器。</h2><p><code>选择器a &gt; 选择器b</code>匹配选择器a的元素的直接子元素，且这个子元素匹配选择器b。<br><code>#part1 &gt; span {...}</code> 会匹配元素 id 是part1的元素的 span 子元素。</p>
+<h2 id="相邻同胞选择器"><a href="#相邻同胞选择器" class="headerlink" title="相邻同胞选择器"></a>相邻同胞选择器</h2><p><code>选择器a + 选择器b</code> 匹配选择器a的元素的相邻兄弟元素，且这个相邻兄弟元素匹配选择器b。<br><code>h1 + h2 {...}</code> 会匹配与 h1 元素相邻的 h2 兄弟元素。</p>
+<h2 id="普通同胞选择器"><a href="#普通同胞选择器" class="headerlink" title="普通同胞选择器"></a>普通同胞选择器</h2><p><code>选择器a ~ 选择器b</code>匹配选择器a元素的兄弟元素（不一定为相邻兄弟元素），且这个兄弟元素匹配选择器b。<br><code>h1 ~ .title {...}</code> 会匹配 h1 元素的 class 是title的兄弟元素。</p>
+<h1 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>属性选择器<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"title"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">form</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box article"</span>&gt;</span>...<span class="tag">&lt;<span class="name">span</span> <span class="attr">lang</span>=<span class="string">"cn-zh"</span>&gt;</span>...<span class="tag">&lt;/<span class="name">span</span>&gt;</span>...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="简单选择器"><a href="#简单选择器" class="headerlink" title="简单选择器"></a>简单选择器</h2><p><code>[attr]</code> 匹配一个指定属性的元素（与属性的值无关）。<br><code>input[type] {...}</code> 会匹配所有带有 type 属性的 input 元素。</p>
+<h2 id="精准选择器"><a href="#精准选择器" class="headerlink" title="精准选择器"></a>精准选择器</h2><p><code>[attr=&quot;val&quot;]</code> 匹配一个指定属性的元素，且该属性的值为 val。<br><code>input[type=&quot;text&quot;] {...}</code> 会匹配所有 type 属性为 text 的 input 元素。</p>
+<h2 id="开头选择器"><a href="#开头选择器" class="headerlink" title="开头选择器"></a>开头选择器</h2><p><code>[attr^=&quot;val&quot;]</code> 匹配一个指定属性的元素，且属性的值以 val 字符串作为开头。<br><code>div[class^=&quot;box&quot;] {...}</code> 会匹配所有 class 名开头为box的 div 元素。</p>
+<h2 id="包含选择器"><a href="#包含选择器" class="headerlink" title="包含选择器"></a>包含选择器</h2><p><code>[attr*=&quot;val&quot;]</code> 匹配一个指定属性的元素，且属性的值带 val 字符串。<br><code>p[class*=&quot;t&quot;] {...}</code> 会匹配所有 class 名中带有t的 p 元素。</p>
+<h2 id="结尾选择器"><a href="#结尾选择器" class="headerlink" title="结尾选择器"></a>结尾选择器</h2><p><code>[attr$=&quot;val&quot;]</code> 匹配一个指定属性的元素，且属性的值以 val 字符串作为结尾。<br><code>[class$=&quot;x&quot;] {...}</code> 会匹配所有 class 名结尾为x的元素。</p>
+<h2 id="部分选择器"><a href="#部分选择器" class="headerlink" title="部分选择器"></a>部分选择器</h2><p><code>[attr~=&quot;val&quot;]</code> 匹配一个指定属性的元素，且属性的值包含多个值（由空格间隔），其中一个为字符串 val 。<br><code>div[class~=&quot;article&quot;] {...}</code> 会匹配所有 class 名有多个，且属性值其中一项为article的 div 元素。<br><code>[attr|=&quot;val&quot;]</code> 匹配一个指定属性的元素，且属性的值为连字符分割的多个值，其中第一个为字符串 val 。<br><code>[lang|=&quot;zh&quot;] {...}</code> 会匹配所有 lang 属性，且属性值中有zh的所有元素。</p>
+<h1 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h1><h2 id="UI伪类"><a href="#UI伪类" class="headerlink" title="UI伪类"></a>UI伪类</h2><ul>
+<li><code>:enabled</code> 匹配启用状态的元素。（不会匹配没有禁用状态的元素）</li>
+<li><code>:disabled</code>  匹配禁用状态的元素。（不会匹配没有禁用状态的元素）</li>
+<li><code>:checked</code> 匹配被选中的 input 元素。（适用于单选按钮和复选框）</li>
+<li><code>:default</code> 匹配一组类似元素中的默认元素。</li>
+<li><code>:valid</code> 和 <code>:invalid</code> 匹配符合和不符合输入验证要求的 input 元素。</li>
+<li><p><code>:required</code> 和 <code>:optional</code> 匹配具有required属性和没有required属性的 input 元素</p>
+<h2 id="动态伪类"><a href="#动态伪类" class="headerlink" title="动态伪类"></a>动态伪类</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: black;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: gray;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: underline;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>:link</code> 未访问的链接元素。</p>
+</li>
+<li><code>:visited</code> 已访问过的链接元素。</li>
+<li><code>:hover</code> 鼠标悬停的元素。</li>
+<li><p><code>:active</code> 被用户激活的元素。</p>
+</li>
+<li><p><code>:focus</code> 在元素获得焦点时生效。<br><code>input:focus {border:1px solid blue}</code> 会使 input 元素在点击输入时出现边框。<br><img src="https://all4one4all.github.io/img-blog/30-1.png" alt=""></p>
+</li>
+</ul>
+<h2 id="其他伪类"><a href="#其他伪类" class="headerlink" title="其他伪类"></a>其他伪类</h2><ul>
+<li><code>:not()</code> 否定选择器对任意选择取反。</li>
+<li><code>:empty</code> 匹配没有任何子元素的元素。</li>
+<li><code>:target</code> 点击一个指向页面中其他元素的链接，则那个元素即可用<code>:target</code>选中。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>:target<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">         <span class="selector-pseudo">:target</span> &#123;</span></span><br><span class="line"><span class="undefined">            border: 1px solid black;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#anchor"</span>&gt;</span>点击跳转段落一<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"anchor"</span>&gt;</span>段落一<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>段落二<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>段落三<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://all4one4all.github.io/img-blog/30-4.png" alt=""></p>
+<h2 id="结构伪类"><a href="#结构伪类" class="headerlink" title="结构伪类"></a>结构伪类</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>结构伪类<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">		:first-child &#123;...&#125; /*匹配第一个h1及p元素*/</span></span><br><span class="line"><span class="undefined">		:last-child &#123;...&#125; /*匹配body，第二个h1及p元素*/</span></span><br><span class="line"><span class="undefined">		:only-child &#123;...&#125; /*匹配p元素*/</span></span><br><span class="line"><span class="undefined">		:only-of-type &#123;...&#125; /*匹配body，div及p元素*/</span></span><br><span class="line"><span class="undefined">	</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>...<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>...<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>:first-child</code> 选取元素中的第一个子元素。</li>
+<li><code>:last-child</code> 选取元素中的最后一个子元素。</li>
+<li><code>:only-child</code> 选取元素的唯一一个子元素。</li>
+<li><code>:only-of-type</code> 选取属于父元素的特定类型的唯一子元素。</li>
+<li><code>:nth-child(n)</code><br>n可以为数字，即选取父元素中的第n个元素。<br>n可以为odd，即选取父元素中所有第奇数个元素。<br>n可以为even，即选取父元素中所有第偶数个元素。</li>
+<li><code>:nth-of-type(n)</code> 选取属于父元素的特定类型的第n个子元素。</li>
+<li><code>:nth-last-of-type(n)</code> 选取属于父元素的特定类型的倒数第n个子元素。</li>
+<li><code>:root</code> 根元素选择器，返回 html。<h1 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h1><h2 id="first-letter"><a href="#first-letter" class="headerlink" title="::first-letter"></a>::first-letter</h2>选中文本段落的首字符。<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>::first-letter<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">        <span class="selector-tag">p</span><span class="selector-pseudo">::first-letter</span> &#123;<span class="attribute">font-size</span>: <span class="number">200%</span>&#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>可以用first-letter来创建首字符放大效果<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="https://all4one4all.github.io/img-blog/30-2.png" alt=""></p>
+<h2 id="first-line"><a href="#first-line" class="headerlink" title="::first-line"></a>::first-line</h2><p>选中文本段落的第一行。</p>
+<h2 id="before和-after"><a href="#before和-after" class="headerlink" title="::before和::after"></a>::before和::after</h2><p>在特定元素前面或后面添加特殊内容。<br>为浮动元素的父元素添加<code>::after</code>来清除浮动<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"."</span>;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">	<span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">clear</span>: both;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>为 a 元素前后添加文本内容。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">title</span>&gt;</span>::before和::after<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">        <span class="selector-tag">a</span><span class="selector-pseudo">::before</span> &#123;<span class="attribute">content</span>:<span class="string">"请点击"</span>&#125;</span></span><br><span class="line"><span class="css">		<span class="selector-tag">a</span><span class="selector-pseudo">::after</span> &#123;<span class="attribute">content</span>:<span class="string">"跳转至首页！"</span>&#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://all4one4all.github.io"</span>&gt;</span>all4one4all<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://all4one4all.github.io/img-blog/30-3.png" alt=""></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html-css/" rel="tag"># html&css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/05/29/" rel="next" title="chrome浏览器开发调试工具的几个小技巧">
+                <i class="fa fa-chevron-left"></i> chrome浏览器开发调试工具的几个小技巧
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/01/31/" rel="prev" title="CSS颜色学习笔记">
+                CSS颜色学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">坐和放宽</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">31</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.</span> <span class="nav-text">基本选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#通用选择器"><span class="nav-number">1.1.</span> <span class="nav-text">通用选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型选择器"><span class="nav-number">1.2.</span> <span class="nav-text">类型选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类选择器"><span class="nav-number">1.3.</span> <span class="nav-text">类选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ID选择器"><span class="nav-number">1.4.</span> <span class="nav-text">ID选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#复合选择器"><span class="nav-number">2.</span> <span class="nav-text">复合选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#并集选择器"><span class="nav-number">2.1.</span> <span class="nav-text">并集选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后代选择器"><span class="nav-number">2.2.</span> <span class="nav-text">后代选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子元素选择器。"><span class="nav-number">2.3.</span> <span class="nav-text">子元素选择器。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相邻同胞选择器"><span class="nav-number">2.4.</span> <span class="nav-text">相邻同胞选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#普通同胞选择器"><span class="nav-number">2.5.</span> <span class="nav-text">普通同胞选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性选择器"><span class="nav-number">3.</span> <span class="nav-text">属性选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择器"><span class="nav-number">3.1.</span> <span class="nav-text">简单选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#精准选择器"><span class="nav-number">3.2.</span> <span class="nav-text">精准选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开头选择器"><span class="nav-number">3.3.</span> <span class="nav-text">开头选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#包含选择器"><span class="nav-number">3.4.</span> <span class="nav-text">包含选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结尾选择器"><span class="nav-number">3.5.</span> <span class="nav-text">结尾选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部分选择器"><span class="nav-number">3.6.</span> <span class="nav-text">部分选择器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#伪类"><span class="nav-number">4.</span> <span class="nav-text">伪类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UI伪类"><span class="nav-number">4.1.</span> <span class="nav-text">UI伪类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态伪类"><span class="nav-number">4.2.</span> <span class="nav-text">动态伪类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他伪类"><span class="nav-number">4.3.</span> <span class="nav-text">其他伪类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构伪类"><span class="nav-number">4.4.</span> <span class="nav-text">结构伪类</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#伪元素"><span class="nav-number">5.</span> <span class="nav-text">伪元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#first-letter"><span class="nav-number">5.1.</span> <span class="nav-text">::first-letter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#first-line"><span class="nav-number">5.2.</span> <span class="nav-text">::first-line</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#before和-after"><span class="nav-number">5.3.</span> <span class="nav-text">::before和::after</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">坐和放宽</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
