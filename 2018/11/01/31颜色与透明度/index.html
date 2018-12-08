@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next gemini" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.3.0">
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="颜色color与background-colorcolor 前景色。可以设置元素中文本的颜色。background-color 背景色。可以设置每个元素的背景色。HTML 中的每个元素都可以看成一个盒子，背景色即这个盒子的颜色。color 与 background-color 都可以使用四种方式来指定颜色：颜色名、RGB值、16进制编码和HSL。 颜色名设定颜色属性时可以直接使用颜色名（颜色关键字">
+<meta name="keywords" content="html&amp;css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS颜色与透明度">
+<meta property="og:url" content="http://yoursite.com/2018/11/01/31颜色与透明度/index.html">
+<meta property="og:site_name" content="坐和放宽">
+<meta property="og:description" content="颜色color与background-colorcolor 前景色。可以设置元素中文本的颜色。background-color 背景色。可以设置每个元素的背景色。HTML 中的每个元素都可以看成一个盒子，背景色即这个盒子的颜色。color 与 background-color 都可以使用四种方式来指定颜色：颜色名、RGB值、16进制编码和HSL。 颜色名设定颜色属性时可以直接使用颜色名（颜色关键字">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/31-1.png">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/31-2.png">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/31-3.png">
+<meta property="og:image" content="https://all4one4all.github.io/img-blog/13-1.png">
+<meta property="og:updated_time" content="2018-12-08T06:40:56.094Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS颜色与透明度">
+<meta name="twitter:description" content="颜色color与background-colorcolor 前景色。可以设置元素中文本的颜色。background-color 背景色。可以设置每个元素的背景色。HTML 中的每个元素都可以看成一个盒子，背景色即这个盒子的颜色。color 与 background-color 都可以使用四种方式来指定颜色：颜色名、RGB值、16进制编码和HSL。 颜色名设定颜色属性时可以直接使用颜色名（颜色关键字">
+<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/31-1.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/01/31颜色与透明度/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>CSS颜色与透明度 | 坐和放宽</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">坐和放宽</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">zz`s blog</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/31颜色与透明度/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="坐和放宽">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="坐和放宽">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">CSS颜色与透明度
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-01T00:00:00+08:00">2018-11-01</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-08 14:40:56" itemprop="dateModified" datetime="2018-12-08T14:40:56+08:00">2018-12-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/瞎记/" itemprop="url" rel="index"><span itemprop="name">瞎记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h1><h2 id="color与background-color"><a href="#color与background-color" class="headerlink" title="color与background-color"></a>color与background-color</h2><p>color 前景色。可以设置元素中文本的颜色。background-color 背景色。可以设置每个元素的背景色。HTML 中的每个元素都可以看成一个盒子，背景色即这个盒子的颜色。<br>color 与 background-color 都可以使用四种方式来指定颜色：颜色名、RGB值、16进制编码和HSL。</p>
+<h2 id="颜色名"><a href="#颜色名" class="headerlink" title="颜色名"></a>颜色名</h2><p>设定颜色属性时可以直接使用颜色名（颜色关键字）。W3C定义了 16个颜色关键字：aqua（浅绿色）、black（黑色）、blue（蓝色）、 fuchsia （紫红色） 、gray（灰色） 、green（绿色） 、lime（黄绿色）、 maroon（褐红色） 、navy （深蓝色）、olive（茶青色 ）、purple（紫色）、red（红色）、silver（银色）、teal（青色）、 white（白色）和 yellow（黄色）。<br>16个颜色关键字及对应RGB值：<br><img src="https://all4one4all.github.io/img-blog/31-1.png" alt=""><br>现在，多数浏览器支持更多颜色名即 <a href="https://en.wikipedia.org/wiki/X11_color_names" target="_blank" rel="noopener">X11颜色名</a></p>
+<h2 id="RGB与RGBA"><a href="#RGB与RGBA" class="headerlink" title="RGB与RGBA"></a>RGB与RGBA</h2><p>用红（r）、绿（g）、蓝（b）三个颜色通道来表示颜色。<br>红、绿、蓝的值分别用0~255之间的数字或百分数来表示。(超出范围的数值将被截至其最接近的值)。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">rgb</span>(<span class="selector-tag">r</span>, <span class="selector-tag">g</span>, <span class="selector-tag">b</span>)</span><br></pre></td></tr></table></figure></p>
+<p><code>rgb(255,0,0)</code>与<code>rgb(100%,0,0)</code>都表示红色<br>rgba 相对于 rgb 增加了一个表示透明度的值，即alpha值，用0.0~1.0之间的数字表示。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">rgba</span>(<span class="selector-tag">r</span>, <span class="selector-tag">g</span>, <span class="selector-tag">b</span>, <span class="selector-tag">a</span>)</span><br></pre></td></tr></table></figure></p>
+<p><em>rgba 颜色只会作用于自身而不会作用于子元素</em></p>
+<h2 id="16进制编码"><a href="#16进制编码" class="headerlink" title="16进制编码"></a>16进制编码</h2><p>用红（r）、绿（g）、蓝（b）三个颜色通道来表示颜色。<br>红、绿、蓝分别用16进制编码来表示，即00~FF。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#rrggbb</span></span><br></pre></td></tr></table></figure></p>
+<p><code>#ff0000</code>表示红色</p>
+<h2 id="HSL与HSLA"><a href="#HSL与HSLA" class="headerlink" title="HSL与HSLA"></a>HSL与HSLA</h2><p>用色相（h）、饱和度（s）、明度（l）三个颜色通道来表示颜色。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">hsl</span>(<span class="selector-tag">h</span>, <span class="selector-tag">s</span>, <span class="selector-tag">l</span>)</span><br></pre></td></tr></table></figure></p>
+<p>色相通过0°~360°之间的一个度数表示。<br><img src="https://all4one4all.github.io/img-blog/31-2.png" alt=""><br>饱和度通过百分数表示。<br>明度通过百分数表示。0%为黑色，50%为标准色，100%为白色。<br><img src="https://all4one4all.github.io/img-blog/31-3.png" alt=""><br><code>hsl(0,100%,50%)</code>表示红色<br>hsla 与 rgba 一样增加了一个表示透明度的值，即alpha值，用0.0~1.0之间的数字表示。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">hsla</span>(<span class="selector-tag">h</span>, <span class="selector-tag">s</span>, <span class="selector-tag">l</span>, <span class="selector-tag">a</span>)</span><br></pre></td></tr></table></figure></p>
+<p><em>hsla 颜色只会作用于自身而不会作用于子元素</em></p>
+<h1 id="透明度"><a href="#透明度" class="headerlink" title="透明度"></a>透明度</h1><p>opacity 属性可以设置元素的不透明。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opacity: value;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>value：取值在0~1之间，0为完全透明，1为完全不透明。<h2 id="opacity与alpha"><a href="#opacity与alpha" class="headerlink" title="opacity与alpha"></a>opacity与alpha</h2><img src="https://all4one4all.github.io/img-blog/13-1.png" alt="">区别：<br>opacity 会继承父元素的 opacity 属性，而 rgba 不会继承父元素属性，即 opacity 会影响其子元素透明度，而 rgba 只决定其自身透明度。<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>rgba<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box1"</span>&gt;</span>0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box2"</span>&gt;</span>0.1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box3"</span>&gt;</span>0.2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box4"</span>&gt;</span>0.3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box5"</span>&gt;</span>0.4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box6"</span>&gt;</span>0.5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box7"</span>&gt;</span>0.6<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box8"</span>&gt;</span>0.7<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box9"</span>&gt;</span>0.8<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box10"</span>&gt;</span>0.9<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ box11"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"clear:both;"</span>&gt;</span>opacity<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0;background:#395692;"</span>&gt;</span>0<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.1;background:#395692;"</span>&gt;</span>0.1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.2;background:#395692;"</span>&gt;</span>0.2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.3;background:#395692;"</span>&gt;</span>0.3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.4;background:#395692;"</span>&gt;</span>0.4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.5;background:#395692;"</span>&gt;</span>0.5<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.6;background:#395692;"</span>&gt;</span>0.6<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.7;background:#395692;"</span>&gt;</span>0.7<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.8;background:#395692;"</span>&gt;</span>0.8<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:0.9;background:#395692;"</span>&gt;</span>0.9<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"squ"</span> <span class="attr">style</span>=<span class="string">"opacity:1;background:#395692;"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.squ</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">float</span>: left;&#125;</span><br><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0);&#125;</span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.1);&#125;</span><br><span class="line"><span class="selector-class">.box3</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.2);&#125;</span><br><span class="line"><span class="selector-class">.box4</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.3);&#125;</span><br><span class="line"><span class="selector-class">.box5</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.4);&#125;</span><br><span class="line"><span class="selector-class">.box6</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.5);&#125;</span><br><span class="line"><span class="selector-class">.box7</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.6);&#125;</span><br><span class="line"><span class="selector-class">.box8</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.7);&#125;</span><br><span class="line"><span class="selector-class">.box9</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.8);&#125;</span><br><span class="line"><span class="selector-class">.box10</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 0.9);&#125;</span><br><span class="line"><span class="selector-class">.box11</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(57, 86, 146, 1);&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html-css/" rel="tag"># html&css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/31/30选择器/" rel="next" title="CSS选择器学习笔记">
+                <i class="fa fa-chevron-left"></i> CSS选择器学习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/02/32层叠机制/" rel="prev" title="CSS层叠规则学习笔记">
+                CSS层叠规则学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">坐和放宽</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">31</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#颜色"><span class="nav-number">1.</span> <span class="nav-text">颜色</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#color与background-color"><span class="nav-number">1.1.</span> <span class="nav-text">color与background-color</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#颜色名"><span class="nav-number">1.2.</span> <span class="nav-text">颜色名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RGB与RGBA"><span class="nav-number">1.3.</span> <span class="nav-text">RGB与RGBA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16进制编码"><span class="nav-number">1.4.</span> <span class="nav-text">16进制编码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HSL与HSLA"><span class="nav-number">1.5.</span> <span class="nav-text">HSL与HSLA</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#透明度"><span class="nav-number">2.</span> <span class="nav-text">透明度</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#opacity与alpha"><span class="nav-number">2.1.</span> <span class="nav-text">opacity与alpha</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">坐和放宽</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
