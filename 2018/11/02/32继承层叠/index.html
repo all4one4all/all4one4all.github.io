@@ -104,25 +104,25 @@
 
 
 
-  <meta name="description" content="HTML 中的一个元素可以有多个选择器及多个样式，而 CSS 层叠规则则会确定最终哪条样式会起作用。 样式来源样式有很多来源，分别为浏览器默认样式，用户样式、链接样式、嵌入样式和行内样式。 浏览器默认样式、用户样式每种浏览器都有一个默认的样式表，在没有任何 CSS 样式的情况下，元素表现的样式即浏览器的默认样式。用户样式是十分少见的，由用户自行添加，主要针对有特殊需求的用户。 行内样式写在 HTM">
+  <meta name="description" content="继承继承即后代元素拥有父元素的样式性质。这部分属性不仅可以应用到指定的元素，还会应用到其后代元素。 CSS3中具有继承性的属性表格 border-collapse：设置表格的边框是否被合并为一个单一的边框 border-spacing：表格的边框间距 caption-side：表标题相对于表框的放置位置  字体 font-family：文本字体 font-size：文本字号 font-style：">
 <meta name="keywords" content="html&amp;css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS层叠规则学习笔记">
-<meta property="og:url" content="http://yoursite.com/2018/11/02/32层叠机制/index.html">
+<meta property="og:title" content="CSS继承与层叠学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/11/02/32继承层叠/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="HTML 中的一个元素可以有多个选择器及多个样式，而 CSS 层叠规则则会确定最终哪条样式会起作用。 样式来源样式有很多来源，分别为浏览器默认样式，用户样式、链接样式、嵌入样式和行内样式。 浏览器默认样式、用户样式每种浏览器都有一个默认的样式表，在没有任何 CSS 样式的情况下，元素表现的样式即浏览器的默认样式。用户样式是十分少见的，由用户自行添加，主要针对有特殊需求的用户。 行内样式写在 HTM">
+<meta property="og:description" content="继承继承即后代元素拥有父元素的样式性质。这部分属性不仅可以应用到指定的元素，还会应用到其后代元素。 CSS3中具有继承性的属性表格 border-collapse：设置表格的边框是否被合并为一个单一的边框 border-spacing：表格的边框间距 caption-side：表标题相对于表框的放置位置  字体 font-family：文本字体 font-size：文本字号 font-style：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-08T08:08:12.760Z">
+<meta property="og:updated_time" content="2018-12-09T09:11:54.127Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS层叠规则学习笔记">
-<meta name="twitter:description" content="HTML 中的一个元素可以有多个选择器及多个样式，而 CSS 层叠规则则会确定最终哪条样式会起作用。 样式来源样式有很多来源，分别为浏览器默认样式，用户样式、链接样式、嵌入样式和行内样式。 浏览器默认样式、用户样式每种浏览器都有一个默认的样式表，在没有任何 CSS 样式的情况下，元素表现的样式即浏览器的默认样式。用户样式是十分少见的，由用户自行添加，主要针对有特殊需求的用户。 行内样式写在 HTM">
+<meta name="twitter:title" content="CSS继承与层叠学习笔记">
+<meta name="twitter:description" content="继承继承即后代元素拥有父元素的样式性质。这部分属性不仅可以应用到指定的元素，还会应用到其后代元素。 CSS3中具有继承性的属性表格 border-collapse：设置表格的边框是否被合并为一个单一的边框 border-spacing：表格的边框间距 caption-side：表标题相对于表框的放置位置  字体 font-family：文本字体 font-size：文本字号 font-style：">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/02/32层叠机制/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/02/32继承层叠/"/>
 
 
 
@@ -132,7 +132,7 @@
   };
 </script>
 
-  <title>CSS层叠规则学习笔记 | 坐和放宽</title>
+  <title>CSS继承与层叠学习笔记 | 坐和放宽</title>
   
 
 
@@ -297,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/32层叠机制/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/02/32继承层叠/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="坐和放宽">
@@ -314,7 +314,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS层叠规则学习笔记
+          <h1 class="post-title" itemprop="name headline">CSS继承与层叠学习笔记
               
             
           </h1>
@@ -356,7 +356,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-08 16:08:12" itemprop="dateModified" datetime="2018-12-08T16:08:12+08:00">2018-12-08</time>
+                <time title="修改时间：2018-12-09 17:11:54" itemprop="dateModified" datetime="2018-12-09T17:11:54+08:00">2018-12-09</time>
               
             
           </span>
@@ -407,23 +407,60 @@
       
 
       
-        <p>HTML 中的一个元素可以有多个选择器及多个样式，而 CSS 层叠规则则会确定最终哪条样式会起作用。</p>
-<h1 id="样式来源"><a href="#样式来源" class="headerlink" title="样式来源"></a>样式来源</h1><p>样式有很多来源，分别为浏览器默认样式，用户样式、链接样式、嵌入样式和行内样式。</p>
-<h2 id="浏览器默认样式、用户样式"><a href="#浏览器默认样式、用户样式" class="headerlink" title="浏览器默认样式、用户样式"></a>浏览器默认样式、用户样式</h2><p>每种浏览器都有一个默认的样式表，在没有任何 CSS 样式的情况下，元素表现的样式即浏览器的默认样式。<br>用户样式是十分少见的，由用户自行添加，主要针对有特殊需求的用户。</p>
-<h2 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h2><p>写在 HTML 标签的 style 属性里。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"border:1ps solid black;color:gray;"</span>&gt;</span>行内样式<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="嵌入样式"><a href="#嵌入样式" class="headerlink" title="嵌入样式"></a>嵌入样式</h2><p>写在 HTML 的 head 元素中。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        p &#123;</span></span><br><span class="line"><span class="undefined">            border: 1px solid black;</span></span><br><span class="line"><span class="undefined">            color: gray;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>嵌入样式<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="链接样式"><a href="#链接样式" class="headerlink" title="链接样式"></a>链接样式</h2><p>把 CSS 样式写在一个单独的文件里。并在 HTML 页面链接样式表。<br>style.css<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>继承即后代元素拥有父元素的样式性质。这部分属性不仅可以应用到指定的元素，还会应用到其后代元素。</p>
+<h2 id="CSS3中具有继承性的属性"><a href="#CSS3中具有继承性的属性" class="headerlink" title="CSS3中具有继承性的属性"></a>CSS3中具有继承性的属性</h2><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul>
+<li><code>border-collapse</code>：设置表格的边框是否被合并为一个单一的边框</li>
+<li><code>border-spacing</code>：表格的边框间距</li>
+<li><code>caption-side</code>：表标题相对于表框的放置位置</li>
+</ul>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><ul>
+<li><code>font-family</code>：文本字体</li>
+<li><code>font-size</code>：文本字号</li>
+<li><code>font-style</code>：文本字体风格</li>
+<li><code>font-variant</code>：设置小型大写字母的字体显示文本</li>
+<li><code>font-weight</code>：文本字重</li>
+<li><code>font</code>：文字字体复合属性</li>
+</ul>
+<h3 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h3><ul>
+<li><code>color</code>：文本颜色</li>
+<li><code>direction</code>：文本方向</li>
+<li><code>letter-spacing</code>：字符间距</li>
+<li><code>line-height</code>：行高</li>
+<li><code>white-space</code>：设置如何处理元素内的空白</li>
+<li><code>word-spacing</code>：字间距</li>
+<li><code>text-align</code>：设置元素中的文本的水平对齐方式</li>
+<li><code>text-indent</code>：首行文本的缩进</li>
+<li><code>text-transform</code>：控制文本的大小写</li>
+</ul>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+<li><code>list-style-image</code>：使用图像来替换列表标记</li>
+<li><code>list-style-position</code>：设置在何处列表标记位置</li>
+<li><code>list-style-type</code>：设置列表标记的样式</li>
+<li><code>list-style</code>：列表标记复合属性</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li><code>cursor</code>：光标形状</li>
+<li><code>quotes</code>：设置嵌套引用的引号类型</li>
+<li><code>visibility</code>：规定元素是否可见</li>
+</ul>
+<p>参考来源：<a href="https://www.w3.org/TR/CSS21/propidx.html" target="_blank" rel="noopener">Full property table</a></p>
+<h1 id="层叠"><a href="#层叠" class="headerlink" title="层叠"></a>层叠</h1><p>HTML 中的一个元素可以有多个选择器及多个样式，而 CSS 层叠规则则会确定最终哪条样式会起作用。</p>
+<h2 id="样式来源"><a href="#样式来源" class="headerlink" title="样式来源"></a>样式来源</h2><p>样式有很多来源，分别为浏览器默认样式，用户样式、链接样式、嵌入样式和行内样式。</p>
+<h3 id="浏览器默认样式、用户样式"><a href="#浏览器默认样式、用户样式" class="headerlink" title="浏览器默认样式、用户样式"></a>浏览器默认样式、用户样式</h3><p>每种浏览器都有一个默认的样式表，在没有任何 CSS 样式的情况下，元素表现的样式即浏览器的默认样式。<br>用户样式是十分少见的，由用户自行添加，主要针对有特殊需求的用户。</p>
+<h3 id="行内样式"><a href="#行内样式" class="headerlink" title="行内样式"></a>行内样式</h3><p>写在 HTML 标签的 style 属性里。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">"border:1ps solid black;color:gray;"</span>&gt;</span>行内样式<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="嵌入样式"><a href="#嵌入样式" class="headerlink" title="嵌入样式"></a>嵌入样式</h3><p>写在 HTML 的 head 元素中。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        p &#123;</span></span><br><span class="line"><span class="undefined">            border: 1px solid black;</span></span><br><span class="line"><span class="undefined">            color: gray;</span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>嵌入样式<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="链接样式"><a href="#链接样式" class="headerlink" title="链接样式"></a>链接样式</h3><p>把 CSS 样式写在一个单独的文件里。并在 HTML 页面链接样式表。<br>style.css<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"style.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>链接样式<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="从其他样式表导入样式"><a href="#从其他样式表导入样式" class="headerlink" title="从其他样式表导入样式"></a>从其他样式表导入样式</h3><p>在样式表里使用<code>@import url(style.css)</code>方式链接其他样式表，    且 @import 必须位于样式表顶端，样式表自己的样式定义在其后。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">"style.css"</span>;</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="声明样式表字符编码"><a href="#声明样式表字符编码" class="headerlink" title="声明样式表字符编码"></a>声明样式表字符编码</h3><p>在 CSS 样式表中可以出现 @import 之前的只有 @charset 语句。用于声明样式表所用的字符编码。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">charset</span> <span class="string">"UTF-8"</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">"style.css"</span>;</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h1><ul>
+<h4 id="从其他样式表导入样式"><a href="#从其他样式表导入样式" class="headerlink" title="从其他样式表导入样式"></a>从其他样式表导入样式</h4><p>在样式表里使用<code>@import url(style.css)</code>方式链接其他样式表，    且 @import 必须位于样式表顶端，样式表自己的样式定义在其后。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">"style.css"</span>;</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="声明样式表字符编码"><a href="#声明样式表字符编码" class="headerlink" title="声明样式表字符编码"></a>声明样式表字符编码</h4><p>在 CSS 样式表中可以出现 @import 之前的只有 @charset 语句。用于声明样式表所用的字符编码。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">charset</span> <span class="string">"UTF-8"</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">"style.css"</span>;</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">color</span>: gray;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h2><ul>
 <li>规则一：有<code>!important</code>的声明 &gt; 不带<code>!important</code>的声明。</li>
 <li>规则二：按来源排序，行内样式 &gt; 嵌入样式 &gt; 链接样式 &gt; 用户样式 &gt; 浏览器默认样式</li>
 <li>规则三：按特指度排序，ID 选择符 &gt; 类选择 &gt; 标签名选择符</li>
 <li>规则四：特指度 &gt; 来源</li>
 <li>规则五：后面出现的声明 &gt; 前面出现的声明。（设定样式 &gt; 继承样式）</li>
 </ul>
-<h1 id="特指度"><a href="#特指度" class="headerlink" title="特指度"></a>特指度</h1><p>特指度（specificity）用来表示某一条规则有多明确。越明确的规则权重越大。特指度可以使用 “ICE” 公式来计算。其结果并不是一个三位数，如果某个样式计算出 “I” 的值较大，则其特指度更高；当对于某个样式计算出 “I” 值相等时才会比较 “C” 值，此时 “C” 值较大的特指度更高；以此类推。<br>用 “ICE” 公式计算三个值：I - C - E<br>计分方法：</p>
+<h2 id="特指度"><a href="#特指度" class="headerlink" title="特指度"></a>特指度</h2><p>特指度（specificity）用来表示某一条规则有多明确。越明确的规则权重越大。特指度可以使用 “ICE” 公式来计算。其结果并不是一个三位数，如果某个样式计算出 “I” 的值较大，则其特指度更高；当对于某个样式计算出 “I” 值相等时才会比较 “C” 值，此时 “C” 值较大的特指度更高；以此类推。<br>用 “ICE” 公式计算三个值：I - C - E<br>计分方法：</p>
 <ol>
 <li>选择符中每有一个 ID，就在 I 的位置上加 1</li>
 <li>选择符中每有一个类，就在 C 的位置上加 1</li>
@@ -675,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#样式来源"><span class="nav-number">1.</span> <span class="nav-text">样式来源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器默认样式、用户样式"><span class="nav-number">1.1.</span> <span class="nav-text">浏览器默认样式、用户样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行内样式"><span class="nav-number">1.2.</span> <span class="nav-text">行内样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌入样式"><span class="nav-number">1.3.</span> <span class="nav-text">嵌入样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接样式"><span class="nav-number">1.4.</span> <span class="nav-text">链接样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#从其他样式表导入样式"><span class="nav-number">1.4.1.</span> <span class="nav-text">从其他样式表导入样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#声明样式表字符编码"><span class="nav-number">1.4.2.</span> <span class="nav-text">声明样式表字符编码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#规则"><span class="nav-number">2.</span> <span class="nav-text">规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特指度"><span class="nav-number">3.</span> <span class="nav-text">特指度</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#继承"><span class="nav-number">1.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3中具有继承性的属性"><span class="nav-number">1.1.</span> <span class="nav-text">CSS3中具有继承性的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">1.1.1.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体"><span class="nav-number">1.1.2.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本"><span class="nav-number">1.1.3.</span> <span class="nav-text">文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.1.4.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">1.1.5.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#层叠"><span class="nav-number">2.</span> <span class="nav-text">层叠</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#样式来源"><span class="nav-number">2.1.</span> <span class="nav-text">样式来源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#浏览器默认样式、用户样式"><span class="nav-number">2.1.1.</span> <span class="nav-text">浏览器默认样式、用户样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行内样式"><span class="nav-number">2.1.2.</span> <span class="nav-text">行内样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌入样式"><span class="nav-number">2.1.3.</span> <span class="nav-text">嵌入样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接样式"><span class="nav-number">2.1.4.</span> <span class="nav-text">链接样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#从其他样式表导入样式"><span class="nav-number">2.1.4.1.</span> <span class="nav-text">从其他样式表导入样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#声明样式表字符编码"><span class="nav-number">2.1.4.2.</span> <span class="nav-text">声明样式表字符编码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#规则"><span class="nav-number">2.2.</span> <span class="nav-text">规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特指度"><span class="nav-number">2.3.</span> <span class="nav-text">特指度</span></a></li></ol></li></ol></div>
             
 
           </div>
