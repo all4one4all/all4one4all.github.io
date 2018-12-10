@@ -104,32 +104,28 @@
 
 
 
-  <meta name="description" content="每一个网页中的元素都有默认的display属性值，来规定元素类型及部分属性。display:none：元素不被显示并脱离文档流。display:block：作为块级元素显示。display:inline：作为行内元素显示。display:inline-block：作为行内块元素显示。display:list-item：元素作为列表显示。display:table：元素作为块级表格显示。displa">
+  <meta name="description" content="inline 元素之间或者 inline-block 元素之间都存在空隙。1234567891011&amp;lt;body&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;l">
 <meta name="keywords" content="html&amp;css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="display学习笔记">
-<meta property="og:url" content="http://yoursite.com/2018/06/12/08display学习笔记/index.html">
+<meta property="og:title" content="去除inline与inline-block间隙">
+<meta property="og:url" content="http://yoursite.com/2018/12/10/36去除inline与inline-block间隙/index.html">
 <meta property="og:site_name" content="坐和放宽">
-<meta property="og:description" content="每一个网页中的元素都有默认的display属性值，来规定元素类型及部分属性。display:none：元素不被显示并脱离文档流。display:block：作为块级元素显示。display:inline：作为行内元素显示。display:inline-block：作为行内块元素显示。display:list-item：元素作为列表显示。display:table：元素作为块级表格显示。displa">
+<meta property="og:description" content="inline 元素之间或者 inline-block 元素之间都存在空隙。1234567891011&amp;lt;body&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;l">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/08-1.png">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/08-2.png">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/08-3.png">
-<meta property="og:image" content="https://all4one4all.github.io/img-blog/08-4.png">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/08-5.png">
 <meta property="og:image" content="https://all4one4all.github.io/img-blog/08-6.png">
-<meta property="og:updated_time" content="2018-12-06T08:51:43.972Z">
+<meta property="og:updated_time" content="2018-12-10T01:51:13.373Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="display学习笔记">
-<meta name="twitter:description" content="每一个网页中的元素都有默认的display属性值，来规定元素类型及部分属性。display:none：元素不被显示并脱离文档流。display:block：作为块级元素显示。display:inline：作为行内元素显示。display:inline-block：作为行内块元素显示。display:list-item：元素作为列表显示。display:table：元素作为块级表格显示。displa">
-<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/08-1.png">
+<meta name="twitter:title" content="去除inline与inline-block间隙">
+<meta name="twitter:description" content="inline 元素之间或者 inline-block 元素之间都存在空隙。1234567891011&amp;lt;body&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;lt;span&amp;gt;span&amp;lt;/span&amp;gt;    &amp;l">
+<meta name="twitter:image" content="https://all4one4all.github.io/img-blog/08-5.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/12/08display学习笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/10/36去除inline与inline-block间隙/"/>
 
 
 
@@ -139,7 +135,7 @@
   };
 </script>
 
-  <title>display学习笔记 | 坐和放宽</title>
+  <title>去除inline与inline-block间隙 | 坐和放宽</title>
   
 
 
@@ -304,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/12/08display学习笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/10/36去除inline与inline-block间隙/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="坐和放宽">
@@ -321,7 +317,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">display学习笔记
+          <h1 class="post-title" itemprop="name headline">去除inline与inline-block间隙
               
             
           </h1>
@@ -346,24 +342,12 @@
                 
               
 
-              <time title="创建时间：2018-06-12 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-12T00:00:00+08:00">2018-06-12</time>
+              <time title="创建时间：2018-12-10 00:00:00 / 修改时间：09:51:13" itemprop="dateCreated datePublished" datetime="2018-12-10T00:00:00+08:00">2018-12-10</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-12-06 16:51:43" itemprop="dateModified" datetime="2018-12-06T16:51:43+08:00">2018-12-06</time>
               
             
           </span>
@@ -380,7 +364,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/瞎记/" itemprop="url" rel="index"><span itemprop="name">瞎记</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/闲写/" itemprop="url" rel="index"><span itemprop="name">闲写</span></a></span>
 
                 
                 
@@ -414,43 +398,7 @@
       
 
       
-        <p>每一个网页中的元素都有默认的display属性值，来规定元素类型及部分属性。<br><code>display:none</code>：元素不被显示并脱离文档流。<br><code>display:block</code>：作为块级元素显示。<br><code>display:inline</code>：作为行内元素显示。<br><code>display:inline-block</code>：作为行内块元素显示。<br><code>display:list-item</code>：元素作为列表显示。<br><code>display:table</code>：元素作为块级表格显示。<br><code>display:inline-table</code>：元素作为内联表格显示。<br>…</p>
-<h1 id="block"><a href="#block" class="headerlink" title="block"></a>block</h1><p><img src="https://all4one4all.github.io/img-blog/08-1.png" alt="">块级元素包括：<code>&lt;div&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>以及html5新增：<code>&lt;header&gt;</code>、<code>&lt;main&gt;</code>、<code>&lt;article&gt;</code>、<code>&lt;section&gt;</code>、<code>&lt;aside&gt;</code>、<code>&lt;footer&gt;</code>等（与div类似）<br>特征：</p>
-<ul>
-<li>独占一行</li>
-<li>可设置width和height属性</li>
-<li>不设置宽度时，宽度为父元素宽度</li>
-</ul>
-<h1 id="inline"><a href="#inline" class="headerlink" title="inline"></a>inline</h1><p><img src="https://all4one4all.github.io/img-blog/08-2.png" alt="">行内元素包括：<code>&lt;span&gt;</code>、<code>&lt;img&gt;</code>、<code>&lt;a&gt;</code>、<code>&lt;b&gt;</code>、<code>&lt;i&gt;</code>、<code>&lt;sub&gt;</code>(上标)、<code>&lt;sup&gt;</code>(下标)<br>特征：</p>
-<ul>
-<li>非独占一行</li>
-<li>不可设置width和height属性</li>
-<li>元素宽度为内容的宽度</li>
-</ul>
-<h1 id="inline-block"><a href="#inline-block" class="headerlink" title="inline-block"></a>inline-block</h1><p><img src="https://all4one4all.github.io/img-blog/08-3.png" alt="">行内块元素包括：<code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code>、<code>&lt;select&gt;</code>、<code>&lt;button&gt;</code><br>特征：</p>
-<ul>
-<li>非独占一行</li>
-<li>可设置width和height属性</li>
-</ul>
-<h1 id="list-item"><a href="#list-item" class="headerlink" title="list-item"></a>list-item</h1><p><img src="https://all4one4all.github.io/img-blog/08-4.png" alt=""><code>&lt;li&gt;</code><br>特征：</p>
-<ul>
-<li>独占一行</li>
-<li>可设置width和height属性</li>
-<li>不设置时宽度时，宽度为父元素宽度</li>
-</ul>
-<h1 id="table"><a href="#table" class="headerlink" title="table"></a>table</h1><p><code>&lt;table&gt;</code><br>特征：</p>
-<ul>
-<li>独占一行</li>
-<li>可设置width和height属性</li>
-<li>不设置时宽度时，宽度为内容宽度</li>
-</ul>
-<h1 id="inline-table"><a href="#inline-table" class="headerlink" title="inline-table"></a>inline-table</h1><p>特征：</p>
-<ul>
-<li>非独占一行</li>
-<li>可设置width和height属性</li>
-<li>不设置时宽度时，宽度为内容宽度</li>
-</ul>
-<h1 id="去除inline与inline-block间隙"><a href="#去除inline与inline-block间隙" class="headerlink" title="去除inline与inline-block间隙"></a>去除inline与inline-block间隙</h1><p><img src="https://all4one4all.github.io/img-blog/08-5.png" alt=""><br>inline元素之间或者inline-block元素之间都存在空隙<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+        <p>inline 元素之间或者 inline-block 元素之间都存在空隙。<br><img src="https://all4one4all.github.io/img-blog/08-5.png" alt=""><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#b72afc</span>;&#125;</span><br><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#23d2fc</span>;&#125;</span><br></pre></td></tr></table></figure>
 <p>空隙的原因为标签之间空格或者回车导致的</p>
 <h2 id="方法一-去掉标签之间空格及换行"><a href="#方法一-去掉标签之间空格及换行" class="headerlink" title="方法一 去掉标签之间空格及换行"></a>方法一 去掉标签之间空格及换行</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>span<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span><span class="tag">&lt;<span class="name">button</span>&gt;</span>button<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -494,8 +442,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/11/06弹性布局/" rel="next" title="flex布局学习笔记">
-                <i class="fa fa-chevron-left"></i> flex布局学习笔记
+              <a href="/2018/12/09/35文本属性/" rel="next" title="CSS文本属性学习笔记">
+                <i class="fa fa-chevron-left"></i> CSS文本属性学习笔记
               </a>
             
           </div>
@@ -503,10 +451,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/12/07/" rel="prev" title="代码上传至github">
-                代码上传至github <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -580,7 +524,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -672,7 +616,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#block"><span class="nav-number">1.</span> <span class="nav-text">block</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#inline"><span class="nav-number">2.</span> <span class="nav-text">inline</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#inline-block"><span class="nav-number">3.</span> <span class="nav-text">inline-block</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#list-item"><span class="nav-number">4.</span> <span class="nav-text">list-item</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#table"><span class="nav-number">5.</span> <span class="nav-text">table</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#inline-table"><span class="nav-number">6.</span> <span class="nav-text">inline-table</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#去除inline与inline-block间隙"><span class="nav-number">7.</span> <span class="nav-text">去除inline与inline-block间隙</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一-去掉标签之间空格及换行"><span class="nav-number">7.1.</span> <span class="nav-text">方法一 去掉标签之间空格及换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二-取消标签闭合"><span class="nav-number">7.2.</span> <span class="nav-text">方法二 取消标签闭合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三-对父元素使用font-size-0"><span class="nav-number">7.3.</span> <span class="nav-text">方法三 对父元素使用font-size:0</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一-去掉标签之间空格及换行"><span class="nav-number">1.</span> <span class="nav-text">方法一 去掉标签之间空格及换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二-取消标签闭合"><span class="nav-number">2.</span> <span class="nav-text">方法二 取消标签闭合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三-对父元素使用font-size-0"><span class="nav-number">3.</span> <span class="nav-text">方法三 对父元素使用font-size:0</span></a></li></ol></div>
             
 
           </div>
